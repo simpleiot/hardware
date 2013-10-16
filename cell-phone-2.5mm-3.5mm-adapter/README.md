@@ -7,4 +7,6 @@ on a cell phone.
 Some cell phones detect a headset be sensing the microphone resistance, so a 
 simple resistor is added on the MIC input to simulate this.
 
+Schematic is in KiCad format.
+
 

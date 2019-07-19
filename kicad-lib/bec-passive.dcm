@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 1K
+D Resistor, US symbol
+K R res resistor
+F ~
+$ENDCMP
+#
+$CMP 2K
+D Resistor, US symbol
+K R res resistor
+F ~
+$ENDCMP
+#
+$CMP R_0603
+D Resistor, US symbol
+K R res resistor
+F ~
+$ENDCMP
+#
+#End Doc Library

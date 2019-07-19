@@ -132,7 +132,7 @@
     (descr "Through hole straight pin header, 1x03, 1.27mm pitch, single row")
     (tags "Through hole pin header THT 1x03 1.27mm single row")
     (path /5D323EF2)
-    (fp_text reference J4 (at 0 -1.695) (layer F.SilkS)
+    (fp_text reference J4 (at 0 4.318) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Conn_01x03 (at 0 4.235) (layer F.Fab) hide
@@ -228,7 +228,7 @@
     (tags resistor)
     (path /5D32E998)
     (attr smd)
-    (fp_text reference R2 (at 0 -1.43 90) (layer F.SilkS)
+    (fp_text reference R2 (at -0.0255 -1.832 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 1K (at 0 1.43 90) (layer F.Fab) hide
@@ -264,7 +264,7 @@
     (tags resistor)
     (path /5D32E11F)
     (attr smd)
-    (fp_text reference R1 (at 0 -1.43 90) (layer F.SilkS)
+    (fp_text reference R1 (at -0.0255 -1.778 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 1K (at 0 1.43 90) (layer F.Fab) hide
@@ -299,7 +299,7 @@
     (descr "Through hole straight pin header, 1x03, 1.27mm pitch, single row")
     (tags "Through hole pin header THT 1x03 1.27mm single row")
     (path /5D327365)
-    (fp_text reference J3 (at 0 -1.695 90) (layer F.SilkS)
+    (fp_text reference J3 (at 0 -2.118 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Conn_01x03 (at 0 4.235 90) (layer F.Fab) hide
@@ -343,7 +343,7 @@
     (descr "Through hole straight pin header, 1x03, 1.27mm pitch, single row")
     (tags "Through hole pin header THT 1x03 1.27mm single row")
     (path /5D32548C)
-    (fp_text reference J2 (at 0 -1.695 90) (layer F.SilkS)
+    (fp_text reference J2 (at 0 -2.032 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Conn_01x03 (at 0 4.235 90) (layer F.Fab) hide
@@ -387,7 +387,7 @@
     (descr "Through hole straight pin header, 1x03, 1.27mm pitch, single row")
     (tags "Through hole pin header THT 1x03 1.27mm single row")
     (path /5D321886)
-    (fp_text reference J1 (at 0 -1.695) (layer F.SilkS)
+    (fp_text reference J1 (at 0 4.318) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Conn_01x03 (at 0 4.235) (layer F.Fab) hide
@@ -426,13 +426,13 @@
     )
   )
 
-  (module Capacitor_SMD:C_0603_1608Metric (layer F.Cu) (tedit 5B301BBE) (tstamp 5D31F726)
+  (module Capacitor_SMD:C_0603_1608Metric (layer F.Cu) (tedit 5B301BBE) (tstamp 5D322A92)
     (at -455.93 -624.0525 270)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags capacitor)
     (path /5D330CD0)
     (attr smd)
-    (fp_text reference C2 (at 0 -1.43 90) (layer F.SilkS)
+    (fp_text reference C2 (at -1.8035 1.778 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 0.1uF (at 0 1.43 90) (layer F.Fab) hide
@@ -468,7 +468,7 @@
     (tags capacitor)
     (path /5D330621)
     (attr smd)
-    (fp_text reference C1 (at 0 -1.43 90) (layer F.SilkS)
+    (fp_text reference C1 (at 2.2605 0.254 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 0.1uF (at 0 1.43 90) (layer F.Fab) hide

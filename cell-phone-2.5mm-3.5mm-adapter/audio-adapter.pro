@@ -1,6 +1,6 @@
-update=Wed 16 Oct 2013 09:57:09 AM EDT
+update=Wed 16 Oct 2013 10:06:40 AM EDT
 version=1
-last_client=eeschema
+last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
@@ -36,8 +36,6 @@ LibName8=led
 LibName9=dip_sockets
 LibName10=pga_sockets
 LibName11=valves
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=/home/cbrake
@@ -79,3 +77,5 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
+[general]
+version=1

@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DS2438
+D 1-wire Smart Battery Monitor
+F https://datasheets.maximintegrated.com/en/ds/DS2438.pdf
+$ENDCMP
+#
+#End Doc Library

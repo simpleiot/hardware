@@ -31,7 +31,7 @@ U 1 1 5D336C3C
 P 3300 3600
 F 0 "J1" H 3192 3793 50  0000 C CNN
 F 1 "Conn_01x03_Female" H 3192 3794 50  0001 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 3300 3600 50  0001 C CNN
+F 2 "bec:xConnect" H 3300 3600 50  0001 C CNN
 F 3 "~" H 3300 3600 50  0001 C CNN
 	1    3300 3600
 	-1   0    0    -1  
@@ -42,7 +42,7 @@ U 1 1 5D338F35
 P 7750 3600
 F 0 "J3" H 7778 3580 50  0000 L CNN
 F 1 "Conn_01x03_Female" H 7642 3794 50  0001 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 7750 3600 50  0001 C CNN
+F 2 "bec:xConnect" H 7750 3600 50  0001 C CNN
 F 3 "~" H 7750 3600 50  0001 C CNN
 	1    7750 3600
 	1    0    0    -1  
@@ -61,12 +61,12 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Female J2
 U 1 1 5D33B377
-P 3950 1400
-F 0 "J2" V 3842 1448 50  0000 L CNN
-F 1 "Conn_01x02_Female" V 3887 1448 50  0001 L CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 3950 1400 50  0001 C CNN
-F 3 "~" H 3950 1400 50  0001 C CNN
-	1    3950 1400
+P 4050 1400
+F 0 "J2" V 3942 1448 50  0000 L CNN
+F 1 "Conn_01x02_Female" V 3987 1448 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4050 1400 50  0001 C CNN
+F 3 "~" H 4050 1400 50  0001 C CNN
+	1    4050 1400
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -97,16 +97,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR03
 U 1 1 5D33EF3B
-P 3950 1700
-F 0 "#PWR03" H 3950 1450 50  0001 C CNN
-F 1 "GND" H 3955 1527 50  0000 C CNN
-F 2 "" H 3950 1700 50  0001 C CNN
-F 3 "" H 3950 1700 50  0001 C CNN
-	1    3950 1700
+P 4150 1700
+F 0 "#PWR03" H 4150 1450 50  0001 C CNN
+F 1 "GND" H 4155 1527 50  0000 C CNN
+F 2 "" H 4150 1700 50  0001 C CNN
+F 3 "" H 4150 1700 50  0001 C CNN
+	1    4150 1700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3950 1600 3950 1700
 Wire Wire Line
 	4050 1600 4050 2250
 $Comp
@@ -314,4 +312,6 @@ Wire Wire Line
 Wire Wire Line
 	5350 2900 5850 2900
 Connection ~ 4800 2250
+Wire Wire Line
+	4150 1600 4150 1700
 $EndSCHEMATC

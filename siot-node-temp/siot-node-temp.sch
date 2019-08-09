@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:siot-node-temp-cache
 EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
@@ -25,45 +26,45 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J1
+L Connector:Conn_01x03_Female J1
 U 1 1 5D321886
 P 4050 3500
 F 0 "J1" H 4200 3600 50  0000 C CNN
 F 1 "Conn_01x03" H 4050 3300 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 4050 3500 50  0001 C CNN
+F 2 "bec:xConnect" H 4050 3500 50  0001 C CNN
 F 3 "~" H 4050 3500 50  0001 C CNN
 	1    4050 3500
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J4
+L Connector:Conn_01x03_Female J4
 U 1 1 5D323EF2
 P 6750 3500
 F 0 "J4" H 6830 3542 50  0000 L CNN
 F 1 "Conn_01x03" H 6550 3300 50  0000 L CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 6750 3500 50  0001 C CNN
+F 2 "bec:xConnect" H 6750 3500 50  0001 C CNN
 F 3 "~" H 6750 3500 50  0001 C CNN
 	1    6750 3500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J2
+L Connector:Conn_01x03_Female J2
 U 1 1 5D32548C
 P 4800 2500
 F 0 "J2" V 4764 2312 50  0000 R CNN
 F 1 "Conn_01x03" V 4673 2312 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 4800 2500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4800 2500 50  0001 C CNN
 F 3 "~" H 4800 2500 50  0001 C CNN
 	1    4800 2500
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J3
+L Connector:Conn_01x03_Female J3
 U 1 1 5D327365
 P 5800 2500
 F 0 "J3" V 5764 2312 50  0000 R CNN
 F 1 "Conn_01x03" V 5673 2312 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 5800 2500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5800 2500 50  0001 C CNN
 F 3 "~" H 5800 2500 50  0001 C CNN
 	1    5800 2500
 	0    -1   -1   0   

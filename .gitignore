@@ -25,3 +25,4 @@ fp-info-cache
 *.csv
 *.zip
 import
+.DS_Store

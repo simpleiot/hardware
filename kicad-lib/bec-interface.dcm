@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DS2483R
+D I2C 1-wire master
+$ENDCMP
+#
+#End Doc Library

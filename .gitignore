@@ -26,3 +26,4 @@ fp-info-cache
 *.zip
 import
 .DS_Store
+*.sch-bak

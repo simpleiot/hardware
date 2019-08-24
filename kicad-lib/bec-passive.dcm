@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 100uF_6.3V
+D X7R 2220
+K cap capacitor
+F http://datasheets.avx.com/cx5r.pdf
+$ENDCMP
+#
 $CMP 1K
 D Resistor, US symbol
 K R res resistor
@@ -10,6 +16,18 @@ $CMP 2K
 D Resistor, US symbol
 K R res resistor
 F ~
+$ENDCMP
+#
+$CMP 33uH_2.5A_84mOhm
+D Inductor
+K inductor choke coil reactor magnetic
+F http://products.sumida.com/products/pdf/CDRH105R.pdf
+$ENDCMP
+#
+$CMP 4.7uF_100V
+D X7R 2220
+K cap capacitor
+F https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf
 $ENDCMP
 #
 $CMP R_0603

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LM2598S-5.0
+D 12V 3A 150kHz Step-Down Voltage Regulator, TO-220
+K Step-Down Voltage Regulator 12V 3A
+F http://www.ti.com/lit/ds/symlink/lm2596.pdf
+$ENDCMP
+#
+#End Doc Library

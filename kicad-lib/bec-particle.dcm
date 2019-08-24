@@ -1,3 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP Particle_Mesh
+D Particle mesh modules such as Boron, Xenon, and Argon
+$ENDCMP
+#
 #End Doc Library

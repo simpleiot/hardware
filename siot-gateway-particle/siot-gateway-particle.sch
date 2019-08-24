@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:siot-gateway-particle-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -26,28 +26,6 @@ F 4 "Unavailable" H 6500 4350 50  0001 L BNN "Field5"
 F 5 "None" H 6500 4350 50  0001 L BNN "Field6"
 F 6 "None" H 6500 4350 50  0001 L BNN "Field7"
 	1    6450 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L bec-connector:xConnect J1
-U 1 1 5D5E6D90
-P 1750 1250
-F 0 "J1" H 1750 1450 50  0000 C CNN
-F 1 "xConnect" H 1700 1050 50  0000 C CNN
-F 2 "BEC:xConnect" H 1700 1000 50  0001 C CNN
-F 3 "~" H 1750 1250 50  0001 C CNN
-	1    1750 1250
-	-1   0    0    -1  
-$EndComp
-$Comp
-L bec-connector:xConnect J2
-U 1 1 5D5E6F22
-P 8100 1250
-F 0 "J2" H 8050 1450 50  0000 L CNN
-F 1 "xConnect" H 7950 1050 50  0000 L CNN
-F 2 "BEC:xConnect" H 8050 1000 50  0001 C CNN
-F 3 "~" H 8100 1250 50  0001 C CNN
-	1    8100 1250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -612,4 +590,26 @@ Wire Wire Line
 	7400 4450 7550 4450
 Wire Wire Line
 	7550 4450 7550 4350
+$Comp
+L bec-connector:xConnect_smd J?
+U 1 1 5D622C61
+P 1750 1250
+F 0 "J?" H 1650 1600 50  0000 C CNN
+F 1 "xConnect_smd" H 1650 1500 50  0000 C CNN
+F 2 "BEC:xConnect_smd" H 1700 1000 50  0001 C CNN
+F 3 "~" H 1750 1250 50  0001 C CNN
+	1    1750 1250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L bec-connector:xConnect_smd J?
+U 1 1 5D626702
+P 8100 1250
+F 0 "J?" H 8050 1600 50  0000 L CNN
+F 1 "xConnect_smd" H 7900 1500 50  0000 L CNN
+F 2 "BEC:xConnect_smd" H 8050 1000 50  0001 C CNN
+F 3 "~" H 8100 1250 50  0001 C CNN
+	1    8100 1250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

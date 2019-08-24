@@ -34,12 +34,12 @@ C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
-# bec-connector_xConnect
+# bec-connector_xConnect_smd
 #
-DEF bec-connector_xConnect J 0 40 Y N 1 F N
+DEF bec-connector_xConnect_smd J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "bec-connector_xConnect" 0 -150 50 H V C CNN
-F2 "BEC:xConnect" -50 -250 50 H I C CNN
+F1 "bec-connector_xConnect_smd" 0 -150 50 H V C CNN
+F2 "BEC:xConnect_smd" -50 -250 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  Connector*:*_1x??_*
@@ -51,9 +51,9 @@ A 0 100 20 901 -901 1 1 6 N 0 120 0 80
 P 2 1 1 6 -50 -100 -20 -100 N
 P 2 1 1 6 -50 0 -20 0 N
 P 2 1 1 6 -50 100 -20 100 N
-X Pin_1 1 -200 100 150 R 50 50 1 1 P
-X Pin_2 2 -200 0 150 R 50 50 1 1 P
-X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+X Pin_3 B -200 -100 150 R 50 50 1 1 P
+X Pin_1 R -200 100 150 R 50 50 1 1 P
+X Pin_2 Y -200 0 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

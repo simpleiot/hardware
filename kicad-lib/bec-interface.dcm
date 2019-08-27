@@ -2,6 +2,7 @@ EESchema-DOCLIB  Version 2.0
 #
 $CMP DS2483R
 D I2C 1-wire master
+F https://datasheets.maximintegrated.com/en/ds/DS2483.pdf
 $ENDCMP
 #
 #End Doc Library

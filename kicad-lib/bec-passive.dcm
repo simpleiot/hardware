@@ -30,6 +30,12 @@ K cap capacitor
 F https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf
 $ENDCMP
 #
+$CMP D_1A_30V_310mV
+D Schottky diode
+K diode Schottky
+F https://www.diodes.com/assets/Datasheets/ds30492.pdf
+$ENDCMP
+#
 $CMP R_0603
 D Resistor, US symbol
 K R res resistor

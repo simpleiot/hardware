@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:siot-gateway-particle-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -417,17 +417,6 @@ Wire Wire Line
 Wire Wire Line
 	3200 6150 3200 6200
 Connection ~ 3200 6150
-$Comp
-L power:+5V #PWR0112
-U 1 1 5D630671
-P 4400 2150
-F 0 "#PWR0112" H 4400 2000 50  0001 C CNN
-F 1 "+5V" H 4415 2323 50  0000 C CNN
-F 2 "" H 4400 2150 50  0001 C CNN
-F 3 "" H 4400 2150 50  0001 C CNN
-	1    4400 2150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4400 2150 4400 2200
 $Comp
@@ -459,17 +448,6 @@ F 3 "" H 4600 2550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4600 2500 4600 2550
-$Comp
-L power:+5V #PWR0114
-U 1 1 5D63CC06
-P 7050 2150
-F 0 "#PWR0114" H 7050 2000 50  0001 C CNN
-F 1 "+5V" H 7065 2323 50  0000 C CNN
-F 2 "" H 7050 2150 50  0001 C CNN
-F 3 "" H 7050 2150 50  0001 C CNN
-	1    7050 2150
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C6
 U 1 1 5D63CC0C
@@ -610,6 +588,28 @@ F 1 "xConnect_smd" H 7900 1500 50  0000 L CNN
 F 2 "BEC:xConnect_smd" H 8050 1000 50  0001 C CNN
 F 3 "~" H 8100 1250 50  0001 C CNN
 	1    8100 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D61D330
+P 4400 2150
+F 0 "#PWR?" H 4400 2000 50  0001 C CNN
+F 1 "+3V3" H 4415 2323 50  0000 C CNN
+F 2 "" H 4400 2150 50  0001 C CNN
+F 3 "" H 4400 2150 50  0001 C CNN
+	1    4400 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D61D77B
+P 7050 2150
+F 0 "#PWR?" H 7050 2000 50  0001 C CNN
+F 1 "+3V3" H 7065 2323 50  0000 C CNN
+F 2 "" H 7050 2150 50  0001 C CNN
+F 3 "" H 7050 2150 50  0001 C CNN
+	1    7050 2150
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:siot-node-current-clamp-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
@@ -26,28 +26,6 @@ F 3 "https://datasheets.maximintegrated.com/en/ds/DS2438.pdf" H 6150 2700 50  00
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x03_Female J1
-U 1 1 5D336C3C
-P 3300 3600
-F 0 "J1" H 3192 3793 50  0000 C CNN
-F 1 "Conn_01x03_Female" H 3192 3794 50  0001 C CNN
-F 2 "bec:xConnect" H 3300 3600 50  0001 C CNN
-F 3 "~" H 3300 3600 50  0001 C CNN
-	1    3300 3600
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x03_Female J3
-U 1 1 5D338F35
-P 7750 3600
-F 0 "J3" H 7778 3580 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 7642 3794 50  0001 C CNN
-F 2 "bec:xConnect" H 7750 3600 50  0001 C CNN
-F 3 "~" H 7750 3600 50  0001 C CNN
-	1    7750 3600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+24V #PWR01
 U 1 1 5D33AB1A
 P 3650 3400
@@ -64,7 +42,7 @@ U 1 1 5D33B377
 P 4050 1400
 F 0 "J2" V 3942 1448 50  0000 L CNN
 F 1 "Conn_01x02_Female" V 3987 1448 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4050 1400 50  0001 C CNN
+F 2 "BEC:1x02_solder-pads" H 4050 1400 50  0001 C CNN
 F 3 "~" H 4050 1400 50  0001 C CNN
 	1    4050 1400
 	0    -1   -1   0   
@@ -107,45 +85,21 @@ F 3 "" H 4150 1700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4050 1600 4050 2250
-$Comp
-L Regulator_Linear:L78L05_SO8 U1
-U 1 1 5D33BA71
-P 5550 4250
-F 0 "U1" H 5550 4492 50  0000 C CNN
-F 1 "L78L05_SO8" H 5550 4401 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5650 4450 50  0001 C CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 5750 4250 50  0001 C CNN
-	1    5550 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR09
-U 1 1 5D33BA77
-P 6000 4200
-F 0 "#PWR09" H 6000 4050 50  0001 C CNN
-F 1 "+5V" H 6015 4373 50  0000 C CNN
-F 2 "" H 6000 4200 50  0001 C CNN
-F 3 "" H 6000 4200 50  0001 C CNN
-	1    6000 4200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5850 4250 6000 4250
-Wire Wire Line
-	6000 4250 6000 4200
+	6400 4250 6400 4200
 $Comp
 L power:GND #PWR07
 U 1 1 5D33BA7F
-P 5550 4600
-F 0 "#PWR07" H 5550 4350 50  0001 C CNN
-F 1 "GND" H 5555 4427 50  0000 C CNN
-F 2 "" H 5550 4600 50  0001 C CNN
-F 3 "" H 5550 4600 50  0001 C CNN
-	1    5550 4600
+P 5750 4700
+F 0 "#PWR07" H 5750 4450 50  0001 C CNN
+F 1 "GND" H 5755 4527 50  0000 C CNN
+F 2 "" H 5750 4700 50  0001 C CNN
+F 3 "" H 5750 4700 50  0001 C CNN
+	1    5750 4700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5550 4550 5550 4600
+	5750 4650 5750 4700
 $Comp
 L power:+24V #PWR05
 U 1 1 5D33BA86
@@ -159,14 +113,12 @@ F 3 "" H 5050 4200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5050 4200 5050 4250
-Wire Wire Line
-	5050 4250 5250 4250
 $Comp
 L Device:C C2
 U 1 1 5D33BA8E
 P 5050 4550
 F 0 "C2" H 5165 4596 50  0000 L CNN
-F 1 "0.1uF" H 5165 4505 50  0000 L CNN
+F 1 "2.2uF" H 5165 4505 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5088 4400 50  0001 C CNN
 F 3 "~" H 5050 4550 50  0001 C CNN
 	1    5050 4550
@@ -175,20 +127,20 @@ $EndComp
 $Comp
 L Device:C C3
 U 1 1 5D33BA94
-P 6000 4550
-F 0 "C3" H 6115 4596 50  0000 L CNN
-F 1 "0.1uF" H 6115 4505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6038 4400 50  0001 C CNN
-F 3 "~" H 6000 4550 50  0001 C CNN
-	1    6000 4550
+P 6400 4550
+F 0 "C3" H 6515 4596 50  0000 L CNN
+F 1 "2.2uF" H 6515 4505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6438 4400 50  0001 C CNN
+F 3 "~" H 6400 4550 50  0001 C CNN
+	1    6400 4550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5050 4250 5050 4400
 Connection ~ 5050 4250
 Wire Wire Line
-	6000 4250 6000 4400
-Connection ~ 6000 4250
+	6400 4250 6400 4400
+Connection ~ 6400 4250
 $Comp
 L power:GND #PWR06
 U 1 1 5D33BA9E
@@ -203,18 +155,18 @@ $EndComp
 $Comp
 L power:GND #PWR010
 U 1 1 5D33BAA4
-P 6000 4750
-F 0 "#PWR010" H 6000 4500 50  0001 C CNN
-F 1 "GND" H 6005 4577 50  0000 C CNN
-F 2 "" H 6000 4750 50  0001 C CNN
-F 3 "" H 6000 4750 50  0001 C CNN
-	1    6000 4750
+P 6400 4750
+F 0 "#PWR010" H 6400 4500 50  0001 C CNN
+F 1 "GND" H 6405 4577 50  0000 C CNN
+F 2 "" H 6400 4750 50  0001 C CNN
+F 3 "" H 6400 4750 50  0001 C CNN
+	1    6400 4750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5050 4700 5050 4750
 Wire Wire Line
-	6000 4700 6000 4750
+	6400 4700 6400 4750
 Wire Wire Line
 	3500 3500 3650 3500
 Wire Wire Line
@@ -244,17 +196,6 @@ Wire Wire Line
 	6650 2600 6800 2600
 Wire Wire Line
 	6800 2600 6800 3600
-$Comp
-L power:+5V #PWR011
-U 1 1 5D343143
-P 6700 2450
-F 0 "#PWR011" H 6700 2300 50  0001 C CNN
-F 1 "+5V" H 6715 2623 50  0000 C CNN
-F 2 "" H 6700 2450 50  0001 C CNN
-F 3 "" H 6700 2450 50  0001 C CNN
-	1    6700 2450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6700 2450 6700 2900
 Wire Wire Line
@@ -314,4 +255,77 @@ Wire Wire Line
 Connection ~ 4800 2250
 Wire Wire Line
 	4150 1600 4150 1700
+$Comp
+L bec-connector:xConnect_smd J1
+U 1 1 5D69F5B9
+P 3300 3600
+F 0 "J1" H 3600 3650 50  0000 C CNN
+F 1 "xConnect_smd" H 3600 3550 50  0000 C CNN
+F 2 "BEC:xConnect_smd" H 3250 3350 50  0001 C CNN
+F 3 "~" H 3300 3600 50  0001 C CNN
+	1    3300 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L bec-connector:xConnect_smd J3
+U 1 1 5D69FF45
+P 7750 3600
+F 0 "J3" H 7850 3650 50  0000 L CNN
+F 1 "xConnect_smd" H 7850 3550 50  0000 L CNN
+F 2 "BEC:xConnect_smd" H 7700 3350 50  0001 C CNN
+F 3 "~" H 7750 3600 50  0001 C CNN
+	1    7750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:ADP7142AUJZ-3.3 U1
+U 1 1 5D6A1134
+P 5750 4350
+F 0 "U1" H 5750 4717 50  0000 C CNN
+F 1 "ADP7142AUJZ-3.3" H 5750 4626 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 5750 3950 50  0001 C CIN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADP7142.pdf" H 5750 3850 50  0001 C CNN
+	1    5750 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4250 5300 4250
+Wire Wire Line
+	6150 4350 6250 4350
+Wire Wire Line
+	6250 4350 6250 4250
+Wire Wire Line
+	6150 4250 6250 4250
+Connection ~ 6250 4250
+Wire Wire Line
+	6250 4250 6400 4250
+Wire Wire Line
+	5300 4250 5300 4450
+Wire Wire Line
+	5300 4450 5350 4450
+Connection ~ 5300 4250
+Wire Wire Line
+	5300 4250 5350 4250
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 5D6A64BE
+P 6700 2450
+F 0 "#PWR0101" H 6700 2300 50  0001 C CNN
+F 1 "+3.3V" H 6715 2623 50  0000 C CNN
+F 2 "" H 6700 2450 50  0001 C CNN
+F 3 "" H 6700 2450 50  0001 C CNN
+	1    6700 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5D6A6E0B
+P 6400 4200
+F 0 "#PWR0102" H 6400 4050 50  0001 C CNN
+F 1 "+3.3V" H 6415 4373 50  0000 C CNN
+F 2 "" H 6400 4200 50  0001 C CNN
+F 3 "" H 6400 4200 50  0001 C CNN
+	1    6400 4200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

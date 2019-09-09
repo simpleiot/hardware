@@ -12,6 +12,12 @@ K R res resistor
 F ~
 $ENDCMP
 #
+$CMP 2.2uF_50V
+D X7R 2220
+K cap capacitor
+F https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf
+$ENDCMP
+#
 $CMP 2K
 D Resistor, US symbol
 K R res resistor

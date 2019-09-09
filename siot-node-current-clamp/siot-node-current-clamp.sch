@@ -114,24 +114,28 @@ $EndComp
 Wire Wire Line
 	5050 4200 5050 4250
 $Comp
-L Device:C C2
+L bec-passive:2.2uF_50V C2
 U 1 1 5D33BA8E
 P 5050 4550
 F 0 "C2" H 5165 4596 50  0000 L CNN
-F 1 "2.2uF" H 5165 4505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5088 4400 50  0001 C CNN
-F 3 "~" H 5050 4550 50  0001 C CNN
+F 1 "2.2uF_50V" H 5165 4505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_2220_5650Metric" H 5088 4400 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 5050 4550 50  0001 C CNN
+F 4 "GRM188R61H225ME11J" H 5050 4550 50  0001 C CNN "MPN"
+F 5 "Murata" H 5050 4550 50  0001 C CNN "Manufacturer"
 	1    5050 4550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C3
+L bec-passive:2.2uF_50V C3
 U 1 1 5D33BA94
 P 6400 4550
 F 0 "C3" H 6515 4596 50  0000 L CNN
-F 1 "2.2uF" H 6515 4505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6438 4400 50  0001 C CNN
-F 3 "~" H 6400 4550 50  0001 C CNN
+F 1 "2.2uF_50V" H 6515 4505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_2220_5650Metric" H 6438 4400 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 6400 4550 50  0001 C CNN
+F 4 "GRM188R61H225ME11J" H 6400 4550 50  0001 C CNN "MPN"
+F 5 "Murata" H 6400 4550 50  0001 C CNN "Manufacturer"
 	1    6400 4550
 	1    0    0    -1  
 $EndComp
@@ -278,13 +282,15 @@ F 3 "~" H 7750 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:ADP7142AUJZ-3.3 U1
+L bec-power:ADP7142AUJZ-3.3 U1
 U 1 1 5D6A1134
 P 5750 4350
 F 0 "U1" H 5750 4717 50  0000 C CNN
 F 1 "ADP7142AUJZ-3.3" H 5750 4626 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 5750 3950 50  0001 C CIN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADP7142.pdf" H 5750 3850 50  0001 C CNN
+F 4 "ADP7142AUJZ-3.3" H 5750 4350 50  0001 C CNN "MPN"
+F 5 "Analog Devices" H 5750 4350 50  0001 C CNN "Manufacturer"
 	1    5750 4350
 	1    0    0    -1  
 $EndComp

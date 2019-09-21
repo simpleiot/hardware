@@ -103,7 +103,7 @@ $EndComp
 Wire Wire Line
 	4950 3950 4950 4000
 Wire Wire Line
-	4950 4000 5250 4000
+	4950 4000 5200 4000
 Wire Wire Line
 	4450 2700 4450 2750
 Wire Wire Line
@@ -181,7 +181,7 @@ U 1 1 5D330621
 P 4950 4300
 F 0 "C1" H 5065 4346 50  0000 L CNN
 F 1 "2.2uF_50V" H 5065 4255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_2220_5650Metric" H 4988 4150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4988 4150 50  0001 C CNN
 F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 4950 4300 50  0001 C CNN
 F 4 "GRM188R61H225ME11J" H 4950 4300 50  0001 C CNN "MPN"
 F 5 "Murata" H 4950 4300 50  0001 C CNN "Manufacturer"
@@ -194,7 +194,7 @@ U 1 1 5D330CD0
 P 6350 4300
 F 0 "C2" H 6465 4346 50  0000 L CNN
 F 1 "2.2uF_50V" H 6465 4255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_2220_5650Metric" H 6388 4150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6388 4150 50  0001 C CNN
 F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 6350 4300 50  0001 C CNN
 F 4 "GRM188R61H225ME11J" H 6350 4300 50  0001 C CNN "MPN"
 F 5 "Murata" H 6350 4300 50  0001 C CNN "Manufacturer"
@@ -299,4 +299,11 @@ F 3 "" H 4450 2700 50  0001 C CNN
 	1    4450 2700
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5200 4000 5200 4200
+Wire Wire Line
+	5200 4200 5250 4200
+Connection ~ 5200 4000
+Wire Wire Line
+	5200 4000 5250 4000
 $EndSCHEMATC

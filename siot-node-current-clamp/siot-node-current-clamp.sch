@@ -119,7 +119,7 @@ U 1 1 5D33BA8E
 P 5050 4550
 F 0 "C2" H 5165 4596 50  0000 L CNN
 F 1 "2.2uF_50V" H 5165 4505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_2220_5650Metric" H 5088 4400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5088 4400 50  0001 C CNN
 F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 5050 4550 50  0001 C CNN
 F 4 "GRM188R61H225ME11J" H 5050 4550 50  0001 C CNN "MPN"
 F 5 "Murata" H 5050 4550 50  0001 C CNN "Manufacturer"
@@ -132,7 +132,7 @@ U 1 1 5D33BA94
 P 6400 4550
 F 0 "C3" H 6515 4596 50  0000 L CNN
 F 1 "2.2uF_50V" H 6515 4505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_2220_5650Metric" H 6438 4400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6438 4400 50  0001 C CNN
 F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 6400 4550 50  0001 C CNN
 F 4 "GRM188R61H225ME11J" H 6400 4550 50  0001 C CNN "MPN"
 F 5 "Murata" H 6400 4550 50  0001 C CNN "Manufacturer"

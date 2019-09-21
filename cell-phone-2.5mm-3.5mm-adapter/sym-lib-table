@@ -1,5 +1,0 @@
-(sym_lib_table
-  (lib (name audio-adapter-rescue)(type Legacy)(uri ${KIPRJMOD}/audio-adapter-rescue.lib)(options "")(descr ""))
-  (lib (name audio-adapter)(type Legacy)(uri ${KIPRJMOD}/audio-adapter.lib)(options "")(descr ""))
-  (lib (name bec)(type Legacy)(uri /scratch/kicad/bec.lib)(options "")(descr ""))
-)

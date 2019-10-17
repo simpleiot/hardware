@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP RECT_50V_1A
+D 50V 1A General Purpose Rectifier Diode, SMA
+K diode
+F https://www.diodes.com/assets/Datasheets/ds16008.pdf
+$ENDCMP
+#
+#End Doc Library

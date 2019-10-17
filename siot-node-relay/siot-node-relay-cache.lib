@@ -1,0 +1,332 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Device_R_US
+#
+DEF Device_R_US R 0 0 N Y 1 F N
+F0 "R" 100 0 50 V V C CNN
+F1 "Device_R_US" -100 0 50 V V C CNN
+F2 "" 40 -10 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 0 -90 0 -100 N
+P 2 0 1 0 0 90 0 100 N
+P 5 0 1 0 0 -30 40 -45 0 -60 -40 -75 0 -90 N
+P 5 0 1 0 0 30 40 15 0 0 -40 -15 0 -30 N
+P 5 0 1 0 0 90 40 75 0 60 -40 45 0 30 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Mechanical_MountingHole
+#
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
+# bec-connector_Screw_Terminal_5mm_01x03
+#
+DEF bec-connector_Screw_Terminal_5mm_01x03 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "bec-connector_Screw_Terminal_5mm_01x03" 0 -200 50 H V C CNN
+F2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" 150 400 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "1935174" 0 300 50 H I C CNN "MPN"
+F5 "Phoenix Contact" 50 500 50 H I C CNN "Manufacturer"
+$FPLIST
+ TerminalBlock*:*
+$ENDFPLIST
+DRAW
+C 0 -100 25 1 1 6 N
+C 0 0 25 1 1 6 N
+C 0 100 25 1 1 6 N
+S -50 150 50 -150 1 1 10 f
+P 2 1 1 6 -21 -87 13 -120 N
+P 2 1 1 6 -21 13 13 -20 N
+P 2 1 1 6 -21 113 13 80 N
+P 2 1 1 6 -14 -80 20 -113 N
+P 2 1 1 6 -14 20 20 -13 N
+P 2 1 1 6 -14 120 20 87 N
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# bec-connector_xConnect_smd
+#
+DEF bec-connector_xConnect_smd J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "bec-connector_xConnect_smd" 0 -150 50 H V C CNN
+F2 "BEC:xConnect_smd" -50 -250 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+A 0 -100 20 901 -901 1 1 6 N 0 -80 0 -120
+A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
+A 0 100 20 901 -901 1 1 6 N 0 120 0 80
+P 2 1 1 6 -50 -100 -20 -100 N
+P 2 1 1 6 -50 0 -20 0 N
+P 2 1 1 6 -50 100 -20 100 N
+X Pin_3 B -200 -100 150 R 50 50 1 1 P
+X Pin_1 R -200 100 150 R 50 50 1 1 P
+X Pin_2 Y -200 0 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# bec-diode_RECT_50V_1A
+#
+DEF bec-diode_RECT_50V_1A D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "bec-diode_RECT_50V_1A" 0 -100 50 H V C CNN
+F2 "Diode_SMD:D_SMA" 0 -175 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Diodes Inc" 14 -256 50 H I C CNN "Manufacturer"
+F5 "US1M-13-F" 22 -340 50 H I C CNN "MPN"
+$FPLIST
+ D*DO?41*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 50 -50 -50 N
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# bec-passive_2.2uF_50V
+#
+DEF bec-passive_2.2uF_50V C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "bec-passive_2.2uF_50V" 25 -100 50 H V L CNN
+F2 "Capacitor_SMD:C_0603_1608Metric" 800 200 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "GRM188R61H225ME11J" 600 100 50 H I C CNN "MPN"
+F5 "Murata" 450 300 50 H I C CNN "Manufacturer"
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# bec-power_ADP7142ARDZ-5.0
+#
+DEF bec-power_ADP7142ARDZ-5.0 U 0 20 Y Y 1 F N
+F0 "U" 0 350 50 H V C TNN
+F1 "bec-power_ADP7142ARDZ-5.0" 0 250 50 H V C CNN
+F2 "BEC:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm_ThermalVias" 50 600 50 H I C CIN
+F3 "" 0 -500 50 H I C CNN
+F4 "Analog Devices" 0 500 50 H I C CNN "Manufacturer"
+F5 "ADP7142ARDZ-5.0" 0 400 50 H I C CNN "MPN"
+$FPLIST
+ TSOT?23*
+$ENDFPLIST
+DRAW
+S 300 200 -300 -350 0 1 10 f
+X VOUT 1 -400 100 100 R 50 50 1 1 w
+X VOUT 2 -400 0 100 R 50 50 1 1 w
+X SENSE/ADJ 3 -400 -100 100 R 50 50 1 1 I
+X GND 4 -400 -200 100 R 50 50 1 1 W
+X EN 5 400 -200 100 L 50 50 1 1 I
+X SS 6 400 -100 100 L 50 50 1 1 I
+X VIN 7 400 0 100 L 50 50 1 1 W
+X VIN 8 400 100 100 L 50 50 1 1 W
+X GND 9 0 -450 100 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# dk_PMIC-Supervisors_STWD100NYWY3F
+#
+DEF dk_PMIC-Supervisors_STWD100NYWY3F U 0 40 Y Y 1 F N
+F0 "U" -205 36 60 H V L CNN
+F1 "dk_PMIC-Supervisors_STWD100NYWY3F" 99 -450 60 H V L CNN
+F2 "digikey-footprints:SOT-753" 200 200 60 H I L CNN
+F3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/06/6a/b3/83/9a/c7/4f/22/CD00176077.pdf/files/CD00176077.pdf/jcr:content/translations/en.CD00176077.pdf" 200 300 60 H I L CNN
+F4 "497-10058-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "STWD100NYWY3F" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "PMIC - Supervisors" 200 700 60 H I L CNN "Family"
+F8 "http://www.st.com/content/ccc/resource/technical/document/datasheet/06/6a/b3/83/9a/c7/4f/22/CD00176077.pdf/files/CD00176077.pdf/jcr:content/translations/en.CD00176077.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/stmicroelectronics/STWD100NYWY3F/497-10058-1-ND/2175107" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC WATCHDOG TIME CIRCUIT SOT23-5" 200 1000 60 H I L CNN "Description"
+F11 "STMicroelectronics" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -200 0 300 -400 0 1 0 f
+X WDO 1 400 -100 100 L 50 50 1 1 O
+X GND 2 100 -500 100 U 50 50 1 1 W
+X ~EN 3 -300 -300 100 R 50 50 1 1 I
+X ~WDI 4 -300 -200 100 R 50 50 1 1 I
+X VCC 5 0 100 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# dk_Power-Relays-Over-2-Amps_G5LE-14_DC5
+#
+DEF dk_Power-Relays-Over-2-Amps_G5LE-14_DC5 RLY 0 0 Y N 1 F N
+F0 "RLY" -340 270 50 H V C CNN
+F1 "dk_Power-Relays-Over-2-Amps_G5LE-14_DC5" -350 200 50 V V R CNN
+F2 "digikey-footprints:Relay_THT_G5LE-14" 200 200 50 H I L CNN
+F3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g5le.pdf" 200 300 60 H I L CNN
+F4 "Z1011-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "G5LE-14 DC5" 200 500 60 H I L CNN "MPN"
+F6 "Relays" 200 600 60 H I L CNN "Category"
+F7 "Power Relays, Over 2 Amps" 200 700 60 H I L CNN "Family"
+F8 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g5le.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/omron-electronics-inc-emc-div/G5LE-14-DC5/Z1011-ND/280371" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "RELAY GEN PURPOSE SPDT 10A 5V" 200 1000 60 H I L CNN "Description"
+F11 "Omron Electronics Inc-EMC Div" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C 0 90 14 0 1 0 F
+C 100 -80 14 0 1 0 F
+C 200 90 14 0 1 0 F
+S -300 200 300 -200 0 1 0 f
+S -280 40 -120 -40 0 1 0 N
+P 2 0 1 0 -260 -40 -140 40 N
+P 2 0 1 0 -200 -200 -200 -40 N
+P 2 0 1 0 -200 200 -200 40 N
+P 2 0 1 0 0 200 0 100 N
+P 2 0 1 0 100 -200 100 -90 N
+P 2 0 1 0 100 -70 190 100 N
+P 2 0 1 0 200 200 200 100 N
+X COM 1 100 -300 100 U 50 50 1 1 P
+X COIL 2 -200 300 100 D 50 50 1 1 P
+X NO 3 0 300 100 D 50 50 1 1 P
+X NC 4 200 300 100 D 50 50 1 1 P
+X COIL 5 -200 -300 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Specialized-ICs_DS2413P_
+#
+DEF dk_Specialized-ICs_DS2413P_ U 0 40 Y Y 1 F N
+F0 "U" 50 250 60 H V C CNN
+F1 "dk_Specialized-ICs_DS2413P_" 50 350 60 H V C CNN
+F2 "digikey-footprints:LSOJ-6_W3.76mm" 200 200 60 H I L CNN
+F3 "https://datasheets.maximintegrated.com/en/ds/DS2413.pdf" 200 300 60 H I L CNN
+F4 "DS2413P+-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "DS2413P+" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "Specialized ICs" 200 700 60 H I L CNN "Family"
+F8 "https://datasheets.maximintegrated.com/en/ds/DS2413.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/maxim-integrated/DS2413P-/DS2413P--ND/1197421" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC ADDRESSABLE SWITCH 6TSOC" 200 1000 60 H I L CNN "Description"
+F11 "Maxim Integrated" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -200 200 300 -300 0 1 0 f
+X GND1 1 100 -400 100 U 50 50 1 1 W
+X IO 2 -300 100 100 R 50 50 1 1 B
+X NC 3 -300 -200 100 R 50 50 1 1 N
+X PIOB 4 -300 -100 100 R 50 50 1 1 B
+X GND2 5 200 -400 100 U 50 50 1 1 W
+X PIOA 6 -300 0 100 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# dk_Transistors-FETs-MOSFETs-Single_BSS84
+#
+DEF dk_Transistors-FETs-MOSFETs-Single_BSS84 Q 0 0 Y Y 1 F N
+F0 "Q" -64 201 60 H V R CNN
+F1 "dk_Transistors-FETs-MOSFETs-Single_BSS84" 186 0 60 V V C CNN
+F2 "digikey-footprints:SOT-23-3" 200 200 60 H I L CNN
+F3 "https://www.onsemi.com/pub/Collateral/BSS84-D.PDF" 200 300 60 H I L CNN
+F4 "BSS84CT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "BSS84" 200 500 60 H I L CNN "MPN"
+F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
+F7 "Transistors - FETs, MOSFETs - Single" 200 700 60 H I L CNN "Family"
+F8 "https://www.onsemi.com/pub/Collateral/BSS84-D.PDF" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/on-semiconductor/BSS84/BSS84CT-ND/244297" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "MOSFET P-CH 50V 130MA SOT-23" 200 1000 60 H I L CNN "Description"
+F11 "ON Semiconductor" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C -50 0 130 0 1 0 f
+C 0 -75 5 0 1 0 N
+C 0 -55 5 0 1 0 N
+C 0 75 5 0 1 0 N
+P 2 0 1 0 0 -55 -100 -55 N
+P 3 0 1 0 -200 -100 -120 -100 -120 55 N
+P 3 0 1 0 0 -100 0 0 -100 0 N
+P 3 0 1 0 0 100 0 55 -100 55 N
+P 5 0 1 0 -5 -75 40 -75 40 55 40 75 -5 75 N
+P 2 1 1 0 -100 -55 -100 -75 N
+P 2 1 1 0 -100 -55 -100 -35 N
+P 2 1 1 0 -100 0 -100 -20 N
+P 2 1 1 0 -100 0 -100 20 N
+P 2 1 1 0 -100 75 -100 35 N
+P 2 1 1 0 60 -8 20 -8 N
+P 4 1 1 0 -15 0 -45 20 -45 -20 -15 0 F
+P 4 1 1 0 40 -10 60 20 20 20 40 -10 F
+X G 1 -300 -100 100 R 50 50 1 1 B
+X D 2 0 200 100 D 50 50 1 1 B
+X S 3 0 -200 100 U 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# power_+24V
+#
+DEF power_+24V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+24V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +24V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_+5V
+#
+DEF power_+5V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library

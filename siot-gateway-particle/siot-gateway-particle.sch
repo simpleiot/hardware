@@ -58,10 +58,6 @@ Wire Wire Line
 	5500 4150 5400 4150
 Wire Wire Line
 	5400 4150 5400 4750
-Wire Wire Line
-	7400 5250 7900 5250
-Wire Wire Line
-	7400 5350 7900 5350
 Text Label 7550 5250 0    50   ~ 0
 SCL
 Text Label 7550 5350 0    50   ~ 0
@@ -160,17 +156,6 @@ Wire Wire Line
 	5100 4250 5100 2550
 Wire Wire Line
 	3600 4350 3600 2550
-$Comp
-L bec-power:LTC3630 U2
-U 1 1 5D5F3C86
-P 2150 6200
-F 0 "U2" H 2125 6725 50  0000 C CNN
-F 1 "LTC3630" H 2125 6634 50  0000 C CNN
-F 2 "BEC:MSOP-12-16-1EP_3x4mm_P0.5mm_EP1.65x2.85mm_ThermalVias" H 400 6650 50  0001 C CNN
-F 3 "" H 400 6650 50  0001 C CNN
-	1    2150 6200
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+24V #PWR0102
 U 1 1 5D5F472A
@@ -589,28 +574,6 @@ F 3 "~" H 8100 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR0112
-U 1 1 5D61D330
-P 4400 2150
-F 0 "#PWR0112" H 4400 2000 50  0001 C CNN
-F 1 "+3V3" H 4415 2323 50  0000 C CNN
-F 2 "" H 4400 2150 50  0001 C CNN
-F 3 "" H 4400 2150 50  0001 C CNN
-	1    4400 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0114
-U 1 1 5D61D77B
-P 7050 2150
-F 0 "#PWR0114" H 7050 2000 50  0001 C CNN
-F 1 "+3V3" H 7065 2323 50  0000 C CNN
-F 2 "" H 7050 2150 50  0001 C CNN
-F 3 "" H 7050 2150 50  0001 C CNN
-	1    7050 2150
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+BATT #PWR0119
 U 1 1 5D65A596
 P 7550 4100
@@ -629,41 +592,6 @@ Wire Wire Line
 	5000 2800 5000 1850
 Wire Wire Line
 	7750 2800 7750 1850
-Wire Wire Line
-	2850 1450 7900 1450
-Wire Wire Line
-	2300 1450 2850 1450
-Connection ~ 2850 1450
-Wire Wire Line
-	2850 1300 2850 1450
-Wire Wire Line
-	2850 850  2850 1000
-$Comp
-L bec-passive:D_1A_30V_310mV D1
-U 1 1 5D66498A
-P 2850 1150
-F 0 "D1" V 2896 1071 50  0000 R CNN
-F 1 "D_1A_30V_310mV" V 2805 1071 50  0000 R CNN
-F 2 "Diode_SMD:D_PowerDI-123" H 2800 800 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds30492.pdf" H 2850 1150 50  0001 C CNN
-F 4 "DFLS130L-7" H 2850 950 50  0001 C CNN "MPN"
-F 5 "Diodes Incorporated" H 2850 900 50  0001 C CNN "Manufacturer"
-	1    2850 1150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+BATT #PWR0120
-U 1 1 5D664010
-P 2850 850
-F 0 "#PWR0120" H 2850 700 50  0001 C CNN
-F 1 "+BATT" H 2865 1023 50  0000 C CNN
-F 2 "" H 2850 850 50  0001 C CNN
-F 3 "" H 2850 850 50  0001 C CNN
-	1    2850 850 
-	1    0    0    -1  
-$EndComp
-Text Notes 3100 1000 0    50   ~ 0
-NP: The reverse current of this diode is likely too high\nand will float charge the battery so don't install for now\n -- this is more of a placeholder at this point.
 Text Notes 1650 5550 0    50   ~ 0
 5V supply is designed to run from 5V to 24V.
 $Comp
@@ -788,4 +716,91 @@ Wire Wire Line
 	5200 4650 5500 4650
 Text Notes 3550 4800 0    50   ~ 0
 Connector for LEDs
+Wire Wire Line
+	2300 1450 7900 1450
+$Comp
+L power:+5V #PWR?
+U 1 1 5DA93BC5
+P 4400 2150
+F 0 "#PWR?" H 4400 2000 50  0001 C CNN
+F 1 "+5V" H 4415 2323 50  0000 C CNN
+F 2 "" H 4400 2150 50  0001 C CNN
+F 3 "" H 4400 2150 50  0001 C CNN
+	1    4400 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DA94452
+P 7050 2150
+F 0 "#PWR?" H 7050 2000 50  0001 C CNN
+F 1 "+5V" H 7065 2323 50  0000 C CNN
+F 2 "" H 7050 2150 50  0001 C CNN
+F 3 "" H 7050 2150 50  0001 C CNN
+	1    7050 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5DA94EC2
+P 8100 4900
+F 0 "R?" V 8200 4900 50  0000 C CNN
+F 1 "4.7K" V 7986 4900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8140 4890 50  0001 C CNN
+F 3 "~" H 8100 4900 50  0001 C CNN
+	1    8100 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5DA957A7
+P 8450 4900
+F 0 "R?" V 8550 4900 50  0000 C CNN
+F 1 "4.7K" V 8336 4900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8490 4890 50  0001 C CNN
+F 3 "~" H 8450 4900 50  0001 C CNN
+	1    8450 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DA95A0F
+P 8100 4650
+F 0 "#PWR?" H 8100 4500 50  0001 C CNN
+F 1 "+3V3" H 8115 4823 50  0000 C CNN
+F 2 "" H 8100 4650 50  0001 C CNN
+F 3 "" H 8100 4650 50  0001 C CNN
+	1    8100 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 4650 8100 4700
+Wire Wire Line
+	8100 4700 8450 4700
+Wire Wire Line
+	8450 4700 8450 4750
+Connection ~ 8100 4700
+Wire Wire Line
+	8100 4700 8100 4750
+Wire Wire Line
+	8100 5050 8100 5250
+Wire Wire Line
+	7400 5250 8100 5250
+Wire Wire Line
+	8450 5050 8450 5350
+Wire Wire Line
+	7400 5350 8450 5350
+$Comp
+L bec-power:LTC3630 U2
+U 1 1 5D5F3C86
+P 2150 6200
+F 0 "U2" H 2125 6725 50  0000 C CNN
+F 1 "LTC3630" H 2125 6634 50  0000 C CNN
+F 2 "BEC:MSOP-12-16-1EP_3x4mm_P0.5mm_EP1.65x2.85mm_ThermalVias" H 400 6650 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3630fd.pdf" H 400 6650 50  0001 C CNN
+F 4 "LTC3630EMSE#PBF" H 2150 6200 50  0001 C CNN "MPN"
+F 5 "Analog Devices" H 2150 6200 50  0001 C CNN "Manufacturer"
+	1    2150 6200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -32,26 +32,6 @@ Wire Wire Line
 Wire Wire Line
 	2200 1650 2450 1650
 $Comp
-L dk_Power-Relays-Over-2-Amps:G5LE-14_DC5 RLY1
-U 1 1 5DB070FA
-P 5800 3850
-F 0 "RLY1" H 6128 3896 50  0000 L CNN
-F 1 "G5LE-14_DC5" H 6128 3805 50  0000 L CNN
-F 2 "digikey-footprints:Relay_THT_G5LE-14" H 6000 4050 50  0001 L CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g5le.pdf" H 6000 4150 60  0001 L CNN
-F 4 "Z1011-ND" H 6000 4250 60  0001 L CNN "Digi-Key_PN"
-F 5 "G5LE-14 DC5" H 6000 4350 60  0001 L CNN "MPN"
-F 6 "Relays" H 6000 4450 60  0001 L CNN "Category"
-F 7 "Power Relays, Over 2 Amps" H 6000 4550 60  0001 L CNN "Family"
-F 8 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g5le.pdf" H 6000 4650 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/omron-electronics-inc-emc-div/G5LE-14-DC5/Z1011-ND/280371" H 6000 4750 60  0001 L CNN "DK_Detail_Page"
-F 10 "RELAY GEN PURPOSE SPDT 10A 5V" H 6000 4850 60  0001 L CNN "Description"
-F 11 "Omron Electronics Inc-EMC Div" H 6000 4950 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6000 5050 60  0001 L CNN "Status"
-	1    5800 3850
-	1    0    0    -1  
-$EndComp
-$Comp
 L dk_Specialized-ICs:DS2413P_ U1
 U 1 1 5DB08335
 P 3700 2450
@@ -341,43 +321,12 @@ F 3 "" H 5600 5000 50  0001 C CNN
 	1    5600 5000
 	1    0    0    -1  
 $EndComp
-$Comp
-L bec-connector:Screw_Terminal_5mm_01x03 J3
-U 1 1 5DB8B2BA
-P 7200 3900
-F 0 "J3" H 7150 3700 50  0000 L CNN
-F 1 "Screw_Terminal_5mm_01x03" H 7050 4150 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 7350 4300 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935174.pdf" H 7200 3900 50  0001 C CNN
-F 4 "1935174" H 7200 4200 50  0001 C CNN "MPN"
-F 5 "Phoenix Contact" H 7250 4400 50  0001 C CNN "Manufacturer"
-	1    7200 3900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5900 4150 6800 4150
+	6900 4150 6900 3900
 Wire Wire Line
-	6800 4150 6800 3900
-Wire Wire Line
-	6800 3900 7000 3900
+	6900 3900 7000 3900
 Wire Wire Line
 	6000 3550 6900 3550
-Wire Wire Line
-	6900 3550 6900 4000
-Wire Wire Line
-	6900 4000 7000 4000
-Wire Wire Line
-	5800 3550 5800 3450
-Wire Wire Line
-	5800 3450 7000 3450
-Wire Wire Line
-	7000 3450 7000 3800
-Text Notes 7300 4050 0    50   ~ 0
-NC
-Text Notes 7300 3950 0    50   ~ 0
-C
-Text Notes 7300 3850 0    50   ~ 0
-NO
 Text Notes 950  3250 0    50   ~ 0
 To enable relay, host must toggle PIOA \nat least once every 1.6s, or the watchdog \nchip will disable the relay. After host stops\ntoggling WD, relay will be disabled in 1.6s.
 Text Notes 5700 4300 0    50   ~ 0
@@ -522,4 +471,83 @@ F 3 "~" H 2100 4300 50  0001 C CNN
 	1    2100 4300
 	1    0    0    -1  
 $EndComp
+$Comp
+L bec-relay:G6DN-1A-L-DC5 K1
+U 1 1 5DC9B453
+P 5800 3850
+F 0 "K1" H 6130 3896 50  0000 L CNN
+F 1 "G6DN-1A-L-DC5" H 6130 3805 50  0000 L CNN
+F 2 "BEC:OMRON-G6DN-1A-L" H 6150 3800 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/307/en-g6dn-838135.pdf" H 5800 3850 50  0001 C CNN
+F 4 "G6DN-1A-L DC5" H 5800 3850 50  0001 C CNN "MPN"
+F 5 "Omron" H 5800 3850 50  0001 C CNN "Manufacturer"
+	1    5800 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4150 6900 4150
+Wire Wire Line
+	6900 3550 6900 3800
+Wire Wire Line
+	6900 3800 7000 3800
+$Comp
+L bec-connector:Screw_Terminal_5mm_01x02 J3
+U 1 1 5DCA5DE2
+P 7200 3900
+F 0 "J3" H 7300 3950 50  0000 L CNN
+F 1 "Screw_Terminal_5mm_01x02" H 6950 3800 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 7350 4300 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935174.pdf" H 7200 3900 50  0001 C CNN
+F 4 "1935161 " H 7200 4200 50  0001 C CNN "MPN"
+F 5 "Phoenix Contact" H 7250 4400 50  0001 C CNN "Manufacturer"
+	1    7200 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L bec-connector:Screw_Terminal_5mm_01x02 J4
+U 1 1 5DE2082B
+P 7700 2350
+F 0 "J4" H 7800 2400 50  0000 L CNN
+F 1 "Screw_Terminal_5mm_01x02" H 7650 2250 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 7850 2750 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935174.pdf" H 7700 2350 50  0001 C CNN
+F 4 "1935161 " H 7700 2650 50  0001 C CNN "MPN"
+F 5 "Phoenix Contact" H 7750 2850 50  0001 C CNN "Manufacturer"
+	1    7700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0115
+U 1 1 5DE211AE
+P 7450 2200
+F 0 "#PWR0115" H 7450 2050 50  0001 C CNN
+F 1 "+24V" H 7465 2373 50  0000 C CNN
+F 2 "" H 7450 2200 50  0001 C CNN
+F 3 "" H 7450 2200 50  0001 C CNN
+	1    7450 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5DE218EB
+P 7450 2400
+F 0 "#PWR0116" H 7450 2150 50  0001 C CNN
+F 1 "GND" H 7455 2227 50  0000 C CNN
+F 2 "" H 7450 2400 50  0001 C CNN
+F 3 "" H 7450 2400 50  0001 C CNN
+	1    7450 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 2250 7450 2250
+Wire Wire Line
+	7450 2250 7450 2200
+Wire Wire Line
+	7450 2400 7450 2350
+Wire Wire Line
+	7450 2350 7500 2350
+Text Label 6300 3550 0    50   ~ 0
+relay_1
+Text Label 6350 4150 0    50   ~ 0
+relay_2
 $EndSCHEMATC

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP G6DN-1A-L-DC5
+D Standex Meder DIP reed relay, SPST, Closing Contact
+K Single Pole Reed Relay SPST
+F https://www.mouser.com/datasheet/2/307/en-g6dn-838135.pdf
+$ENDCMP
+#
+#End Doc Library

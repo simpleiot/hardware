@@ -12,10 +12,20 @@ K linear regulator ldo adjustable positive
 F https://www.analog.com/media/en/technical-documentation/data-sheets/ADP7142.pdf
 $ENDCMP
 #
+$CMP ADP7142AUJZ-5.0
+D 200mA, Low Noise, CMOS Low Dropout Regulator, Positive, Adjustable, TSOT-23-5
+K linear regulator ldo adjustable positive
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ADP7142.pdf
+$ENDCMP
+#
 $CMP LM2598S-5.0
 D 12V 3A 150kHz Step-Down Voltage Regulator, TO-220
 K Step-Down Voltage Regulator 12V 3A
 F http://www.ti.com/lit/ds/symlink/lm2596.pdf
+$ENDCMP
+#
+$CMP LTC3630
+F https://www.analog.com/media/en/technical-documentation/data-sheets/3630fd.pdf
 $ENDCMP
 #
 #End Doc Library

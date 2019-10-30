@@ -24,6 +24,12 @@ K R res resistor
 F ~
 $ENDCMP
 #
+$CMP 2uF_450V
+D Metallized Polypropylene Film Capacitor
+K cap capacitor
+F https://www.mouser.com/datasheet/2/400/MKP_B3267_P-1526490.pdf
+$ENDCMP
+#
 $CMP 33uH_2.5A_84mOhm
 D Inductor
 K inductor choke coil reactor magnetic

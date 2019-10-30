@@ -256,14 +256,14 @@ F 3 "~" H 6750 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L bec-power:ADP7142AUJZ-3.3 U1
+L bec-power:ADP7142AUJZ-5.0 U1
 U 1 1 5D68AE2A
 P 5650 4100
 F 0 "U1" H 5650 4467 50  0000 C CNN
-F 1 "ADP7142AUJZ-3.3" H 5650 4376 50  0000 C CNN
+F 1 "ADP7142AUJZ-5.0" H 5650 4376 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 5650 3700 50  0001 C CIN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADP7142.pdf" H 5650 3600 50  0001 C CNN
-F 4 "ADP7142AUJZ-3.3" H 5650 4100 50  0001 C CNN "MPN"
+F 4 "ADP7142AUJZ-5.0" H 5650 4100 50  0001 C CNN "MPN"
 F 5 "Analog Devices" H 5650 4100 50  0001 C CNN "Manufacturer"
 	1    5650 4100
 	1    0    0    -1  

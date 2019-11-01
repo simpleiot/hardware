@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:siot-splice-kit-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -43,4 +44,26 @@ Wire Wire Line
 	4100 3250 4450 3250
 Wire Wire Line
 	4100 3350 4450 3350
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5DB9C90A
+P 2500 3150
+F 0 "H1" H 2600 3196 50  0000 L CNN
+F 1 "MountingHole" H 2600 3105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 2500 3150 50  0001 C CNN
+F 3 "~" H 2500 3150 50  0001 C CNN
+	1    2500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5DB9C910
+P 2500 3400
+F 0 "H2" H 2600 3446 50  0000 L CNN
+F 1 "MountingHole" H 2600 3355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 2500 3400 50  0001 C CNN
+F 3 "~" H 2500 3400 50  0001 C CNN
+	1    2500 3400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

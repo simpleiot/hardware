@@ -1,0 +1,449 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "SIoT Temp/Humidity node with RJ11 connectors"
+Date "2019-11-01"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:RJ13 J1
+U 1 1 5DBDA72F
+P 3000 3100
+F 0 "J1" H 3057 3667 50  0000 C CNN
+F 1 "RJ13" H 3057 3576 50  0000 C CNN
+F 2 "" V 3000 3125 50  0001 C CNN
+F 3 "~" V 3000 3125 50  0001 C CNN
+	1    3000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:RJ13 J2
+U 1 1 5DBDB44B
+P 7900 3100
+F 0 "J2" H 7570 3196 50  0000 R CNN
+F 1 "RJ13" H 7570 3105 50  0000 R CNN
+F 2 "" V 7900 3125 50  0001 C CNN
+F 3 "~" V 7900 3125 50  0001 C CNN
+	1    7900 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dk_Humidity-Moisture-Sensors:BME280 U3
+U 1 1 5DBDC34D
+P 7200 4700
+F 0 "U3" H 7528 4803 60  0000 L CNN
+F 1 "BME280" H 7528 4697 60  0000 L CNN
+F 2 "digikey-footprints:Pressure_Sensor_LGA-8_2.5x2.5mm_BME280" H 7400 4900 60  0001 L CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280-DS002.pdf" H 7400 5000 60  0001 L CNN
+F 4 "828-1063-1-ND" H 7400 5100 60  0001 L CNN "Digi-Key_PN"
+F 5 "BME280" H 7400 5200 60  0001 L CNN "MPN"
+F 6 "Sensors, Transducers" H 7400 5300 60  0001 L CNN "Category"
+F 7 "Humidity, Moisture Sensors" H 7400 5400 60  0001 L CNN "Family"
+F 8 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280-DS002.pdf" H 7400 5500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/bosch-sensortec/BME280/828-1063-1-ND/6136314" H 7400 5600 60  0001 L CNN "DK_Detail_Page"
+F 10 "SENSOR PRESSURE HUMIDITY TEMP" H 7400 5700 60  0001 L CNN "Description"
+F 11 "Bosch Sensortec" H 7400 5800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7400 5900 60  0001 L CNN "Status"
+	1    7200 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L bec-power:ADP7142AUJZ-3.3 U2
+U 1 1 5DBDD075
+P 5500 2000
+F 0 "U2" H 5500 2367 50  0000 C CNN
+F 1 "ADP7142AUJZ-3.3" H 5500 2276 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 5500 1600 50  0001 C CIN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADP7142.pdf" H 5500 1500 50  0001 C CNN
+F 4 "Analog Devices" H 5500 2500 50  0001 C CNN "Manufacturer"
+F 5 "ADP7142AUJZ-3.3" H 5500 2400 50  0001 C CNN "MPN"
+	1    5500 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2900 3700 2900
+Wire Wire Line
+	3400 3000 3900 3000
+Wire Wire Line
+	3400 3100 4300 3100
+Wire Wire Line
+	3400 3200 3700 3200
+$Comp
+L bec-passive:2.2uF_50V C1
+U 1 1 5DBE4ACC
+P 4650 2100
+F 0 "C1" H 4250 2150 50  0000 L CNN
+F 1 "2.2uF_50V" H 4100 2050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5450 2300 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 4650 2100 50  0001 C CNN
+F 4 "GRM188R61H225ME11J" H 5250 2200 50  0001 C CNN "MPN"
+F 5 "Murata" H 5100 2400 50  0001 C CNN "Manufacturer"
+	1    4650 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5DBE5BD0
+P 3700 2700
+F 0 "#PWR0101" H 3700 2550 50  0001 C CNN
+F 1 "+5V" H 3715 2873 50  0000 C CNN
+F 2 "" H 3700 2700 50  0001 C CNN
+F 3 "" H 3700 2700 50  0001 C CNN
+	1    3700 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2700 3700 2900
+Connection ~ 3700 2900
+Wire Wire Line
+	3700 2900 7500 2900
+$Comp
+L power:GND #PWR0102
+U 1 1 5DBE6075
+P 3700 3300
+F 0 "#PWR0102" H 3700 3050 50  0001 C CNN
+F 1 "GND" H 3705 3127 50  0000 C CNN
+F 2 "" H 3700 3300 50  0001 C CNN
+F 3 "" H 3700 3300 50  0001 C CNN
+	1    3700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5DBE636A
+P 3900 3300
+F 0 "#PWR0103" H 3900 3050 50  0001 C CNN
+F 1 "GND" H 3905 3127 50  0000 C CNN
+F 2 "" H 3900 3300 50  0001 C CNN
+F 3 "" H 3900 3300 50  0001 C CNN
+	1    3900 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3200 3700 3300
+Connection ~ 3700 3200
+Wire Wire Line
+	3700 3200 7500 3200
+Wire Wire Line
+	3900 3000 3900 3300
+Connection ~ 3900 3000
+Wire Wire Line
+	3900 3000 7500 3000
+Text Label 3450 3100 0    50   ~ 0
+data
+$Comp
+L power:+5V #PWR0104
+U 1 1 5DBE691F
+P 4650 1800
+F 0 "#PWR0104" H 4650 1650 50  0001 C CNN
+F 1 "+5V" H 4665 1973 50  0000 C CNN
+F 2 "" H 4650 1800 50  0001 C CNN
+F 3 "" H 4650 1800 50  0001 C CNN
+	1    4650 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1900 4650 1950
+$Comp
+L power:GND #PWR0105
+U 1 1 5DBE6EFB
+P 4650 2250
+F 0 "#PWR0105" H 4650 2000 50  0001 C CNN
+F 1 "GND" H 4655 2077 50  0000 C CNN
+F 2 "" H 4650 2250 50  0001 C CNN
+F 3 "" H 4650 2250 50  0001 C CNN
+	1    4650 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L bec-passive:2.2uF_50V C2
+U 1 1 5DBE7140
+P 6200 2100
+F 0 "C2" H 6350 2100 50  0000 L CNN
+F 1 "2.2uF_50V" H 6300 2200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7000 2300 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 6200 2100 50  0001 C CNN
+F 4 "GRM188R61H225ME11J" H 6800 2200 50  0001 C CNN "MPN"
+F 5 "Murata" H 6650 2400 50  0001 C CNN "Manufacturer"
+	1    6200 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0106
+U 1 1 5DBE79FB
+P 6200 1750
+F 0 "#PWR0106" H 6200 1600 50  0001 C CNN
+F 1 "+3.3V" H 6215 1923 50  0000 C CNN
+F 2 "" H 6200 1750 50  0001 C CNN
+F 3 "" H 6200 1750 50  0001 C CNN
+	1    6200 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 1750 6200 1900
+Wire Wire Line
+	5900 1900 5950 1900
+Connection ~ 6200 1900
+Wire Wire Line
+	6200 1900 6200 1950
+Wire Wire Line
+	4650 1800 4650 1900
+Connection ~ 4650 1900
+$Comp
+L power:GND #PWR0107
+U 1 1 5DBE8738
+P 6200 2250
+F 0 "#PWR0107" H 6200 2000 50  0001 C CNN
+F 1 "GND" H 6205 2077 50  0000 C CNN
+F 2 "" H 6200 2250 50  0001 C CNN
+F 3 "" H 6200 2250 50  0001 C CNN
+	1    6200 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1900 5050 1900
+Wire Wire Line
+	5050 1900 5050 2100
+Wire Wire Line
+	5050 2100 5100 2100
+Connection ~ 5050 1900
+Wire Wire Line
+	5050 1900 4650 1900
+Wire Wire Line
+	5900 2000 5950 2000
+Wire Wire Line
+	5950 2000 5950 1900
+Connection ~ 5950 1900
+Wire Wire Line
+	5950 1900 6200 1900
+$Comp
+L power:GND #PWR0108
+U 1 1 5DBE9F20
+P 5500 2300
+F 0 "#PWR0108" H 5500 2050 50  0001 C CNN
+F 1 "GND" H 5505 2127 50  0000 C CNN
+F 2 "" H 5500 2300 50  0001 C CNN
+F 3 "" H 5500 2300 50  0001 C CNN
+	1    5500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0109
+U 1 1 5DBF0478
+P 5150 3950
+F 0 "#PWR0109" H 5150 3800 50  0001 C CNN
+F 1 "+3.3V" H 5165 4123 50  0000 C CNN
+F 2 "" H 5150 3950 50  0001 C CNN
+F 3 "" H 5150 3950 50  0001 C CNN
+	1    5150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5DBF1728
+P 7200 5200
+F 0 "#PWR0110" H 7200 4950 50  0001 C CNN
+F 1 "GND" H 7205 5027 50  0000 C CNN
+F 2 "" H 7200 5200 50  0001 C CNN
+F 3 "" H 7200 5200 50  0001 C CNN
+	1    7200 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 5000 7200 5050
+Wire Wire Line
+	7200 5050 7300 5050
+Wire Wire Line
+	7300 5050 7300 5000
+Connection ~ 7200 5050
+Wire Wire Line
+	7200 5050 7200 5100
+Wire Wire Line
+	4300 3100 4300 4650
+Wire Wire Line
+	4300 4650 4650 4650
+Connection ~ 4300 3100
+Wire Wire Line
+	4300 3100 7500 3100
+Wire Wire Line
+	4300 4650 4300 4900
+Wire Wire Line
+	4300 4900 4650 4900
+Connection ~ 4300 4650
+$Comp
+L power:GND #PWR0111
+U 1 1 5DBF306C
+P 5150 5450
+F 0 "#PWR0111" H 5150 5200 50  0001 C CNN
+F 1 "GND" H 5155 5277 50  0000 C CNN
+F 2 "" H 5150 5450 50  0001 C CNN
+F 3 "" H 5150 5450 50  0001 C CNN
+	1    5150 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 5000 4550 5000
+Wire Wire Line
+	4550 5000 4550 5400
+Wire Wire Line
+	4550 5400 5150 5400
+Wire Wire Line
+	5150 5400 5150 5350
+Wire Wire Line
+	5150 5400 5150 5450
+Connection ~ 5150 5400
+Wire Wire Line
+	5250 5300 5250 5350
+Wire Wire Line
+	5250 5350 5150 5350
+Connection ~ 5150 5350
+Wire Wire Line
+	5150 5350 5150 5300
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DBF6AC8
+P 7200 4150
+F 0 "#PWR?" H 7200 4000 50  0001 C CNN
+F 1 "+3.3V" H 7215 4323 50  0000 C CNN
+F 2 "" H 7200 4150 50  0001 C CNN
+F 3 "" H 7200 4150 50  0001 C CNN
+	1    7200 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 4150 7200 4200
+Wire Wire Line
+	7200 4200 7300 4200
+Wire Wire Line
+	7300 4200 7300 4300
+Connection ~ 7200 4200
+Wire Wire Line
+	7200 4200 7200 4250
+Wire Wire Line
+	7200 4250 6700 4250
+Wire Wire Line
+	6700 4250 6700 4800
+Wire Wire Line
+	6700 4800 6800 4800
+Connection ~ 7200 4250
+Wire Wire Line
+	7200 4250 7200 4300
+$Comp
+L Device:R_US R?
+U 1 1 5DBFA88C
+P 5850 4250
+F 0 "R?" H 5918 4296 50  0000 L CNN
+F 1 "4.75K" H 5918 4205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" V 5890 4240 50  0001 C CNN
+F 3 "~" H 5850 4250 50  0001 C CNN
+	1    5850 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4500 5850 4500
+Wire Wire Line
+	5700 4600 6250 4600
+$Comp
+L Device:R_US R?
+U 1 1 5DC01ABC
+P 6250 4250
+F 0 "R?" H 6318 4296 50  0000 L CNN
+F 1 "4.75K" H 6318 4205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" V 6290 4240 50  0001 C CNN
+F 3 "~" H 6250 4250 50  0001 C CNN
+	1    6250 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4400 5850 4500
+Connection ~ 5850 4500
+Wire Wire Line
+	5850 4500 6800 4500
+Wire Wire Line
+	6250 4400 6250 4600
+Connection ~ 6250 4600
+Wire Wire Line
+	6250 4600 6800 4600
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DC03428
+P 5850 3950
+F 0 "#PWR?" H 5850 3800 50  0001 C CNN
+F 1 "+3.3V" H 5865 4123 50  0000 C CNN
+F 2 "" H 5850 3950 50  0001 C CNN
+F 3 "" H 5850 3950 50  0001 C CNN
+	1    5850 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3950 5850 4000
+Wire Wire Line
+	5850 4000 6250 4000
+Wire Wire Line
+	6250 4000 6250 4100
+Connection ~ 5850 4000
+Wire Wire Line
+	5850 4000 5850 4100
+Wire Wire Line
+	7200 5100 6750 5100
+Wire Wire Line
+	6750 5100 6750 4700
+Wire Wire Line
+	6750 4700 6800 4700
+Connection ~ 7200 5100
+Wire Wire Line
+	7200 5100 7200 5200
+Text Notes 7400 5050 0    50   ~ 0
+I2C Slave address: 0x76
+$Comp
+L bec-passive:2.2uF_50V C?
+U 1 1 5DC07923
+P 5800 5350
+F 0 "C?" H 5950 5350 50  0000 L CNN
+F 1 "2.2uF_50V" H 5900 5450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6600 5550 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" H 5800 5350 50  0001 C CNN
+F 4 "GRM188R61H225ME11J" H 6400 5450 50  0001 C CNN "MPN"
+F 5 "Murata" H 6250 5650 50  0001 C CNN "Manufacturer"
+	1    5800 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3950 5150 4150
+$Comp
+L bec-interface:DS28E17 U1
+U 1 1 5DBE2526
+P 5200 4700
+F 0 "U1" H 5300 5200 50  0000 C CNN
+F 1 "DS28E17" H 4850 5200 50  0000 C CNN
+F 2 "BEC:QFN65P400X400X80-17N" H 4800 4000 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS28E17.pdf" H 4800 4000 50  0001 C CNN
+F 4 "DS28DE17Q" H 4800 5400 50  0001 C CNN "MPN"
+F 5 "Maxim Integrated" H 4700 5500 50  0001 C CNN "Manufactuer"
+	1    5200 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 5100 5800 5100
+Wire Wire Line
+	5800 5100 5800 5200
+$Comp
+L power:GND #PWR?
+U 1 1 5DC0A109
+P 5800 5500
+F 0 "#PWR?" H 5800 5250 50  0001 C CNN
+F 1 "GND" H 5805 5327 50  0000 C CNN
+F 2 "" H 5800 5500 50  0001 C CNN
+F 3 "" H 5800 5500 50  0001 C CNN
+	1    5800 5500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

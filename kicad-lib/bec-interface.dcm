@@ -5,4 +5,8 @@ D I2C 1-wire master
 F https://datasheets.maximintegrated.com/en/ds/DS2483.pdf
 $ENDCMP
 #
+$CMP DS28E17
+F https://datasheets.maximintegrated.com/en/ds/DS28E17.pdf
+$ENDCMP
+#
 #End Doc Library

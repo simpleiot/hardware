@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 32)
+    (drawings 35)
     (tracks 90)
     (zones 0)
     (modules 16)
@@ -824,6 +824,9 @@
     )
   )
 
+  (gr_line (start 185.3 83.1) (end 188.6 83.1) (layer F.SilkS) (width 0.4))
+  (gr_line (start 185.3 77.7) (end 188.6 77.7) (layer F.SilkS) (width 0.4))
+  (gr_line (start 187 76) (end 187 79.4) (layer F.SilkS) (width 0.4))
   (gr_arc (start 54.775555 118.198889) (end 61.68163 118.198889) (angle -90) (layer Dwgs.User) (width 0.2))
   (gr_arc (start 63.775555 118.198889) (end 61.68163 118.198889) (angle -90) (layer Dwgs.User) (width 0.2))
   (gr_arc (start 54.775555 75.198889) (end 54.775555 82.604965) (angle -90) (layer Dwgs.User) (width 0.2))

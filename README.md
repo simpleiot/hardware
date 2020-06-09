@@ -62,3 +62,11 @@ line level voltages, so use at your own risk.
 
 xConnect extension cables can be purchased from
 [Wired Watts](https://www.wiredwatts.com/3-core-xconnect-connector)
+
+## Pull Requests Welcome
+
+This is a community projects -- pull requests will be considered.
+
+## License
+
+Apache Version 2.0

@@ -9,7 +9,8 @@ attach to the gateway and daisychained for 10's of feet. The system is
 waterproof and uses low cost
 [3-wire connectors](https://www.wiredwatts.com/3-core-xconnect-connector).
 
-![xconnect](https://www.wiredwatts.com/img/products/m/pt3c6km3-1_m.jpg)
+![xconnect](https://www.wiredwatts.com/img/products/m/pt3c6km3-1_m.jpg |
+width=200)
 
 ## Software
 
@@ -48,3 +49,8 @@ The Simple IoT project includes open source gateway
 - [design files](https://github.com/simpleiot/hardware/tree/master/siot-node-relay)
 
 ![temp node](docs/node-relay.jpg)
+
+## Sensor extension cables
+
+xConnect extension cables can be purchased from
+[Wired Watts](https://www.wiredwatts.com/3-core-xconnect-connector)

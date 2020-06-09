@@ -27,6 +27,7 @@ The Simple IoT project includes open source gateway
 - [design files](https://github.com/simpleiot/hardware/tree/master/siot-gateway-particle)
 
 <img src="docs/gw.jpg" width="400"/>
+<img src="docs/gw-internals.jpg" width="400"/>
 
 ## Temperature node
 

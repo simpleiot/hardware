@@ -52,6 +52,11 @@ The Simple IoT project includes open source gateway
 
 <img src="docs/node-relay.jpg" width="400"/>
 
+The relay node has a terminal block inside the enclosure. The above example
+shows an example of an AC plug switched by the relay. Although the relay is
+rated for line level voltages, the PCB design is not UL tested or certified for
+line level voltages, so use at your own risk.
+
 ## Sensor extension cables
 
 xConnect extension cables can be purchased from

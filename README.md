@@ -14,7 +14,7 @@ connectors.
 
 ## Software
 
-The Simple IoT project includes open source gateway
+The Simple IoT project also includes open source gateway
 [firmware](https://github.com/simpleiot/firmware/tree/master/siot-fw) and
 [portal](https://github.com/simpleiot/simpleiot) software.
 

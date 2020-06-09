@@ -9,7 +9,7 @@ attach to the gateway and daisychained for 10's of feet. The system is
 waterproof and uses low cost
 [3-wire connectors](https://www.wiredwatts.com/3-core-xconnect-connector).
 
-<img src="https://www.wiredwatts.com/img/products/m/pt3c6km3-1_m.jpg" width="100"/>
+<img src="https://www.wiredwatts.com/img/products/m/pt3c6km3-1_m.jpg" width="200"/>
 
 ## Software
 
@@ -26,12 +26,14 @@ The Simple IoT project includes open source gateway
 - Waterproof, UV resistant enclosure
 - [design files](https://github.com/simpleiot/hardware/tree/master/siot-gateway-particle)
 
+<img src="docs/gw.jpg" width="200"/>
+
 ## Temperature node
 
 - two DS18B20 1-wire temperature sensors
 - [design files](https://github.com/simpleiot/hardware/tree/master/siot-node-temp)
 
-![temp node](docs/node-tmp.jpg)
+<img src="docs/node-tmp.jpg" width="200"/>
 
 ## AC Current measurement node
 
@@ -39,7 +41,7 @@ The Simple IoT project includes open source gateway
   sensors
 - [design files](https://github.com/simpleiot/hardware/tree/master/siot-node-current-clamp)
 
-![temp node](docs/node-current-sense.jpg)
+<img src="docs/node-current-sense.jpg" width="200"/>
 
 ## Relay node
 
@@ -47,7 +49,7 @@ The Simple IoT project includes open source gateway
   ([G6DN-1A-L-DC5](https://www.mouser.com/datasheet/2/307/en-g6dn-838135.pdf)
 - [design files](https://github.com/simpleiot/hardware/tree/master/siot-node-relay)
 
-![temp node](docs/node-relay.jpg)
+<img src="docs/node-relay.jpg" width="200"/>
 
 ## Sensor extension cables
 

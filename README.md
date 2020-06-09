@@ -9,8 +9,7 @@ attach to the gateway and daisychained for 10's of feet. The system is
 waterproof and uses low cost
 [3-wire connectors](https://www.wiredwatts.com/3-core-xconnect-connector).
 
-![xconnect](https://www.wiredwatts.com/img/products/m/pt3c6km3-1_m.jpg |
-width=200)
+<img src="https://www.wiredwatts.com/img/products/m/pt3c6km3-1_m.jpg" width="100"/>
 
 ## Software
 

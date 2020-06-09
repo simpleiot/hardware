@@ -48,7 +48,7 @@ The Simple IoT project also includes open source gateway
 ## Relay node
 
 - 5A Relay
-  ([G6DN-1A-L-DC5](https://www.mouser.com/datasheet/2/307/en-g6dn-838135.pdf)
+  ([G6DN-1A-L-DC5](https://www.mouser.com/datasheet/2/307/en-g6dn-838135.pdf))
 - [design files](https://github.com/simpleiot/hardware/tree/master/siot-node-relay)
 
 <img src="docs/node-relay.jpg" width="400"/>

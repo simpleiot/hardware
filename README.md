@@ -65,7 +65,7 @@ xConnect extension cables can be purchased from
 
 ## Pull Requests Welcome
 
-This is a community projects -- pull requests will be considered.
+This is a community project -- pull requests will be considered.
 
 ## License
 

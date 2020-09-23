@@ -1,12 +1,29 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP ADS7843E-2K5
+D Single-supply, 12bit, 4 ch, touch screen driver, 2.2 - 5.25 VDD, -40 to +85 C, QSPI, SPI, 3-wire serial interface, SSOP-16
+K Single-supply, 12bit, 4 ch, touch screen driver, 2.2 - 5.25 VDD, -40 to +85 C, QSPI, SPI, 3-wire serial interface, SSOP-16
+F http://www.ti.com/lit/ds/symlink/ads7843.pdf
+$ENDCMP
+#
 $CMP DS2483R
 D I2C 1-wire master
 F https://datasheets.maximintegrated.com/en/ds/DS2483.pdf
 $ENDCMP
 #
+$CMP DS2484R
+D I2C 1-wire master
+F https://datasheets.maximintegrated.com/en/ds/DS2484.pdf
+$ENDCMP
+#
 $CMP DS28E17
 F https://datasheets.maximintegrated.com/en/ds/DS28E17.pdf
+$ENDCMP
+#
+$CMP TSC2046
+D Single-supply, 12bit, 4 ch, touch screen driver, 2.2 - 5.25 VDD, -40 to +85 C, QSPI, SPI, 3-wire serial interface, SSOP-16
+K Single-supply, 12bit, 4 ch, touch screen driver, 2.2 - 5.25 VDD, -40 to +85 C, QSPI, SPI, 3-wire serial interface, SSOP-16
+F https://www.ti.com/lit/ds/symlink/tsc2046.pdf
 $ENDCMP
 #
 #End Doc Library

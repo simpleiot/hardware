@@ -4,13 +4,10 @@ title: Gateway
 sidebar_label: Gateway
 ---
 
-The Simple IoT Gateway has a
-[Feather](https://learn.adafruit.com/adafruit-feather/) socket that works with
-modules from
-[Particle](https://store.particle.io/collections/prototyping-hardware) and
-[Adafruit](https://www.adafruit.com/feather). Two xConnect connectors are also
-provided to connect to sensors nodes using a 1-wire bus.
-
+The Simple IoT Gateway has a [Feather](https://learn.adafruit.com/adafruit-feather/) socket that works with modules from [Particle](https://store.particle.io/collections/prototyping-hardware) and [Adafruit](https://www.adafruit.com/feather). Two xConnect connectors are also provided to connect to sensors nodes using a 1-wire bus.
+$$
+a = 1 + 2
+$$
 ![gw](gw.jpg)
 
 ## Specifications

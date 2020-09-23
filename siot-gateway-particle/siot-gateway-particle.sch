@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:siot-gateway-particle-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -593,7 +592,7 @@ Wire Wire Line
 Wire Wire Line
 	7750 2800 7750 1850
 Text Notes 1650 5550 0    50   ~ 0
-5V supply is designed to run from 5V to 24V.
+5V,500mA supply is designed to run from 5V to 24V.
 $Comp
 L bec-passive:SMBJ5.0A D2
 U 1 1 5D661DB4
@@ -719,10 +718,10 @@ Connector for LEDs
 Wire Wire Line
 	2300 1450 7900 1450
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0112
 U 1 1 5DA93BC5
 P 4400 2150
-F 0 "#PWR?" H 4400 2000 50  0001 C CNN
+F 0 "#PWR0112" H 4400 2000 50  0001 C CNN
 F 1 "+5V" H 4415 2323 50  0000 C CNN
 F 2 "" H 4400 2150 50  0001 C CNN
 F 3 "" H 4400 2150 50  0001 C CNN
@@ -730,10 +729,10 @@ F 3 "" H 4400 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0114
 U 1 1 5DA94452
 P 7050 2150
-F 0 "#PWR?" H 7050 2000 50  0001 C CNN
+F 0 "#PWR0114" H 7050 2000 50  0001 C CNN
 F 1 "+5V" H 7065 2323 50  0000 C CNN
 F 2 "" H 7050 2150 50  0001 C CNN
 F 3 "" H 7050 2150 50  0001 C CNN
@@ -741,10 +740,10 @@ F 3 "" H 7050 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R4
 U 1 1 5DA94EC2
 P 8100 4900
-F 0 "R?" V 8200 4900 50  0000 C CNN
+F 0 "R4" V 8200 4900 50  0000 C CNN
 F 1 "4.7K" V 7986 4900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8140 4890 50  0001 C CNN
 F 3 "~" H 8100 4900 50  0001 C CNN
@@ -752,10 +751,10 @@ F 3 "~" H 8100 4900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R5
 U 1 1 5DA957A7
 P 8450 4900
-F 0 "R?" V 8550 4900 50  0000 C CNN
+F 0 "R5" V 8550 4900 50  0000 C CNN
 F 1 "4.7K" V 8336 4900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8490 4890 50  0001 C CNN
 F 3 "~" H 8450 4900 50  0001 C CNN
@@ -763,10 +762,10 @@ F 3 "~" H 8450 4900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0120
 U 1 1 5DA95A0F
 P 8100 4650
-F 0 "#PWR?" H 8100 4500 50  0001 C CNN
+F 0 "#PWR0120" H 8100 4500 50  0001 C CNN
 F 1 "+3V3" H 8115 4823 50  0000 C CNN
 F 2 "" H 8100 4650 50  0001 C CNN
 F 3 "" H 8100 4650 50  0001 C CNN
@@ -803,4 +802,6 @@ F 5 "Analog Devices" H 2150 6200 50  0001 C CNN "Manufacturer"
 	1    2150 6200
 	1    0    0    -1  
 $EndComp
+Text Notes 5050 6150 0    50   ~ 0
+Boron: Operating current (uC on, radio on): 100-200mA\nBoron: Peak current LTE: 120-490mA
 $EndSCHEMATC

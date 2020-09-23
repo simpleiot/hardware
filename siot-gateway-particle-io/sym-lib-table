@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name siot-gateway-particle-io-rescue)(type Legacy)(uri ${KIPRJMOD}/siot-gateway-particle-io-rescue.lib)(options "")(descr ""))
+)

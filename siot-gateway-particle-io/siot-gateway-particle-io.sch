@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:siot-gateway-particle-io-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title "SIoT Gateway (Particle) IO"
 Date "2019-08-20"
 Rev "v1"
@@ -831,7 +830,7 @@ F 12 "Active" H 9300 5950 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L bec-power:MDC3105LT1G U5
+L siot-gateway-particle-io-rescue:MDC3105LT1G-bec-power U5
 U 1 1 5D805251
 P 8150 3750
 F 0 "U5" H 8150 3975 50  0000 C CNN
@@ -844,7 +843,7 @@ F 5 "MDC3105LT1G" H 8100 4150 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L bec-power:MDC3105LT1G U6
+L siot-gateway-particle-io-rescue:MDC3105LT1G-bec-power U6
 U 1 1 5D805889
 P 8200 4600
 F 0 "U6" H 8200 4825 50  0000 C CNN
@@ -856,4 +855,10 @@ F 5 "MDC3105LT1G" H 8150 5000 50  0001 C CNN "MPN"
 	1    8200 4600
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 8850 5850 1200 650 
+U 5E6DB8BD
+F0 "Universal IO" 50
+F1 "sheet2.sch" 50
+$EndSheet
 $EndSCHEMATC

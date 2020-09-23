@@ -1,27 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Device_R_US
-#
-DEF Device_R_US R 0 0 N Y 1 F N
-F0 "R" 100 0 50 V V C CNN
-F1 "Device_R_US" -100 0 50 V V C CNN
-F2 "" 40 -10 50 V I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- R_*
-$ENDFPLIST
-DRAW
-P 2 0 1 0 0 -90 0 -100 N
-P 2 0 1 0 0 90 0 100 N
-P 5 0 1 0 0 -30 40 -45 0 -60 -40 -75 0 -90 N
-P 5 0 1 0 0 30 40 15 0 0 -40 -15 0 -30 N
-P 5 0 1 0 0 90 40 75 0 60 -40 45 0 30 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Mechanical_MountingHole
 #
 DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
@@ -187,32 +166,6 @@ X ~ 4 200 300 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# dk_PMIC-Supervisors_STWD100NYWY3F
-#
-DEF dk_PMIC-Supervisors_STWD100NYWY3F U 0 40 Y Y 1 F N
-F0 "U" -205 36 60 H V L CNN
-F1 "dk_PMIC-Supervisors_STWD100NYWY3F" 99 -450 60 H V L CNN
-F2 "digikey-footprints:SOT-753" 200 200 60 H I L CNN
-F3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/06/6a/b3/83/9a/c7/4f/22/CD00176077.pdf/files/CD00176077.pdf/jcr:content/translations/en.CD00176077.pdf" 200 300 60 H I L CNN
-F4 "497-10058-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "STWD100NYWY3F" 200 500 60 H I L CNN "MPN"
-F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
-F7 "PMIC - Supervisors" 200 700 60 H I L CNN "Family"
-F8 "http://www.st.com/content/ccc/resource/technical/document/datasheet/06/6a/b3/83/9a/c7/4f/22/CD00176077.pdf/files/CD00176077.pdf/jcr:content/translations/en.CD00176077.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/stmicroelectronics/STWD100NYWY3F/497-10058-1-ND/2175107" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "IC WATCHDOG TIME CIRCUIT SOT23-5" 200 1000 60 H I L CNN "Description"
-F11 "STMicroelectronics" 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-S -200 0 300 -400 0 1 0 f
-X WDO 1 400 -100 100 L 50 50 1 1 O
-X GND 2 100 -500 100 U 50 50 1 1 W
-X ~EN 3 -300 -300 100 R 50 50 1 1 I
-X ~WDI 4 -300 -200 100 R 50 50 1 1 I
-X VCC 5 0 100 100 D 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
 # dk_Specialized-ICs_DS2413P_
 #
 DEF dk_Specialized-ICs_DS2413P_ U 0 40 Y Y 1 F N
@@ -237,46 +190,6 @@ X NC 3 -300 -200 100 R 50 50 1 1 N
 X PIOB 4 -300 -100 100 R 50 50 1 1 B
 X GND2 5 200 -400 100 U 50 50 1 1 W
 X PIOA 6 -300 0 100 R 50 50 1 1 B
-ENDDRAW
-ENDDEF
-#
-# dk_Transistors-FETs-MOSFETs-Single_BSS84
-#
-DEF dk_Transistors-FETs-MOSFETs-Single_BSS84 Q 0 0 Y Y 1 F N
-F0 "Q" -64 201 60 H V R CNN
-F1 "dk_Transistors-FETs-MOSFETs-Single_BSS84" 186 0 60 V V C CNN
-F2 "digikey-footprints:SOT-23-3" 200 200 60 H I L CNN
-F3 "https://www.onsemi.com/pub/Collateral/BSS84-D.PDF" 200 300 60 H I L CNN
-F4 "BSS84CT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "BSS84" 200 500 60 H I L CNN "MPN"
-F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
-F7 "Transistors - FETs, MOSFETs - Single" 200 700 60 H I L CNN "Family"
-F8 "https://www.onsemi.com/pub/Collateral/BSS84-D.PDF" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/on-semiconductor/BSS84/BSS84CT-ND/244297" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "MOSFET P-CH 50V 130MA SOT-23" 200 1000 60 H I L CNN "Description"
-F11 "ON Semiconductor" 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-C -50 0 130 0 1 0 f
-C 0 -75 5 0 1 0 N
-C 0 -55 5 0 1 0 N
-C 0 75 5 0 1 0 N
-P 2 0 1 0 0 -55 -100 -55 N
-P 3 0 1 0 -200 -100 -120 -100 -120 55 N
-P 3 0 1 0 0 -100 0 0 -100 0 N
-P 3 0 1 0 0 100 0 55 -100 55 N
-P 5 0 1 0 -5 -75 40 -75 40 55 40 75 -5 75 N
-P 2 1 1 0 -100 -55 -100 -75 N
-P 2 1 1 0 -100 -55 -100 -35 N
-P 2 1 1 0 -100 0 -100 -20 N
-P 2 1 1 0 -100 0 -100 20 N
-P 2 1 1 0 -100 75 -100 35 N
-P 2 1 1 0 60 -8 20 -8 N
-P 4 1 1 0 -15 0 -45 20 -45 -20 -15 0 F
-P 4 1 1 0 40 -10 60 20 20 20 40 -10 F
-X G 1 -300 -100 100 R 50 50 1 1 B
-X D 2 0 200 100 D 50 50 1 1 B
-X S 3 0 -200 100 U 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #

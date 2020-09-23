@@ -228,74 +228,6 @@ F 3 "" H 5750 2900 50  0001 C CNN
 	1    5750 2900
 	1    0    0    -1  
 $EndComp
-$Comp
-L dk_PMIC-Supervisors:STWD100NYWY3F U3
-U 1 1 5DB13D83
-P 4100 4750
-F 0 "U3" H 3700 4150 60  0000 L CNN
-F 1 "STWD100NYWY3F" H 3300 4250 60  0000 L CNN
-F 2 "digikey-footprints:SOT-753" H 4300 4950 60  0001 L CNN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/06/6a/b3/83/9a/c7/4f/22/CD00176077.pdf/files/CD00176077.pdf/jcr:content/translations/en.CD00176077.pdf" H 4300 5050 60  0001 L CNN
-F 4 "497-10058-1-ND" H 4300 5150 60  0001 L CNN "Digi-Key_PN"
-F 5 "STWD100NYWY3F" H 4300 5250 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 4300 5350 60  0001 L CNN "Category"
-F 7 "PMIC - Supervisors" H 4300 5450 60  0001 L CNN "Family"
-F 8 "http://www.st.com/content/ccc/resource/technical/document/datasheet/06/6a/b3/83/9a/c7/4f/22/CD00176077.pdf/files/CD00176077.pdf/jcr:content/translations/en.CD00176077.pdf" H 4300 5550 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/stmicroelectronics/STWD100NYWY3F/497-10058-1-ND/2175107" H 4300 5650 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC WATCHDOG TIME CIRCUIT SOT23-5" H 4300 5750 60  0001 L CNN "Description"
-F 11 "STMicroelectronics" H 4300 5850 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 4300 5950 60  0001 L CNN "Status"
-	1    4100 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0108
-U 1 1 5DB168B4
-P 4100 4650
-F 0 "#PWR0108" H 4100 4500 50  0001 C CNN
-F 1 "+5V" H 4115 4823 50  0000 C CNN
-F 2 "" H 4100 4650 50  0001 C CNN
-F 3 "" H 4100 4650 50  0001 C CNN
-	1    4100 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0109
-U 1 1 5DB16EA2
-P 4200 5250
-F 0 "#PWR0109" H 4200 5000 50  0001 C CNN
-F 1 "GND" H 4205 5077 50  0000 C CNN
-F 2 "" H 4200 5250 50  0001 C CNN
-F 3 "" H 4200 5250 50  0001 C CNN
-	1    4200 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0110
-U 1 1 5DB1862E
-P 3650 4450
-F 0 "#PWR0110" H 3650 4300 50  0001 C CNN
-F 1 "+5V" H 3665 4623 50  0000 C CNN
-F 2 "" H 3650 4450 50  0001 C CNN
-F 3 "" H 3650 4450 50  0001 C CNN
-	1    3650 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 4750 3650 4950
-Wire Wire Line
-	3650 4950 3800 4950
-$Comp
-L Device:R_US R1
-U 1 1 5DB19349
-P 3650 4600
-F 0 "R1" H 3718 4646 50  0000 L CNN
-F 1 "100K" H 3718 4555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3690 4590 50  0001 C CNN
-F 3 "~" H 3650 4600 50  0001 C CNN
-	1    3650 4600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6150 2450 6250 2450
 Wire Wire Line
@@ -310,32 +242,16 @@ Wire Wire Line
 Connection ~ 6250 2450
 Wire Wire Line
 	2950 2450 3400 2450
-$Comp
-L power:GND #PWR0112
-U 1 1 5DB374FC
-P 5600 5000
-F 0 "#PWR0112" H 5600 4750 50  0001 C CNN
-F 1 "GND" H 5605 4827 50  0000 C CNN
-F 2 "" H 5600 5000 50  0001 C CNN
-F 3 "" H 5600 5000 50  0001 C CNN
-	1    5600 5000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6900 4150 6900 3900
 Wire Wire Line
 	6900 3900 7000 3900
 Wire Wire Line
 	6000 3550 6900 3550
-Text Notes 950  3250 0    50   ~ 0
-To enable relay, host must toggle PIOA \nat least once every 1.6s, or the watchdog \nchip will disable the relay. After host stops\ntoggling WD, relay will be disabled in 1.6s.
-Text Notes 5700 4300 0    50   ~ 0
-Relay coil current is ~80mA
+Text Notes 5700 4350 0    50   ~ 0
+Relay coil current is 38mA
 Text Notes 2950 1350 0    50   ~ 0
 Power can be 5-24V. Not sure how will the linear reg will handle\n24V so may need to swap that out later for something better.
-Connection ~ 3650 4950
-Text Notes 3400 5650 0    50   ~ 0
-Watchdog EN has internal pulldown.
 $Comp
 L power:+5V #PWR0111
 U 1 1 5DBD40CA
@@ -350,11 +266,7 @@ $EndComp
 Wire Wire Line
 	5600 3450 5600 3500
 Wire Wire Line
-	5600 4950 5600 5000
-Wire Wire Line
 	5600 4150 5600 4200
-Wire Wire Line
-	2950 4950 3650 4950
 $Comp
 L bec-diode:RECT_50V_1A D1
 U 1 1 5DBDEF18
@@ -381,58 +293,9 @@ Wire Wire Line
 	5300 4200 5600 4200
 Connection ~ 5600 4200
 Wire Wire Line
-	5600 4200 5600 4550
-$Comp
-L dk_Transistors-FETs-MOSFETs-Single:BSS84 Q1
-U 1 1 5DBE8CD5
-P 5600 4750
-F 0 "Q1" H 5708 4803 60  0000 L CNN
-F 1 "BSS84" H 5708 4697 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 5800 4950 60  0001 L CNN
-F 3 "https://www.onsemi.com/pub/Collateral/BSS84-D.PDF" H 5800 5050 60  0001 L CNN
-F 4 "BSS84CT-ND" H 5800 5150 60  0001 L CNN "Digi-Key_PN"
-F 5 "BSS84" H 5800 5250 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5800 5350 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 5800 5450 60  0001 L CNN "Family"
-F 8 "https://www.onsemi.com/pub/Collateral/BSS84-D.PDF" H 5800 5550 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/on-semiconductor/BSS84/BSS84CT-ND/244297" H 5800 5650 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET P-CH 50V 130MA SOT-23" H 5800 5750 60  0001 L CNN "Description"
-F 11 "ON Semiconductor" H 5800 5850 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5800 5950 60  0001 L CNN "Status"
-	1    5600 4750
-	1    0    0    -1  
-$EndComp
+	5600 4200 5600 4500
 Wire Wire Line
-	2950 2450 2950 4950
-$Comp
-L Device:R_US R2
-U 1 1 5DBEC52A
-P 5050 4600
-F 0 "R2" H 5118 4646 50  0000 L CNN
-F 1 "100K" H 5118 4555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5090 4590 50  0001 C CNN
-F 3 "~" H 5050 4600 50  0001 C CNN
-	1    5050 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0113
-U 1 1 5DBECB8E
-P 5050 4450
-F 0 "#PWR0113" H 5050 4300 50  0001 C CNN
-F 1 "+5V" H 5065 4623 50  0000 C CNN
-F 2 "" H 5050 4450 50  0001 C CNN
-F 3 "" H 5050 4450 50  0001 C CNN
-	1    5050 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 4850 5050 4850
-Wire Wire Line
-	5050 4750 5050 4850
-Connection ~ 5050 4850
-Wire Wire Line
-	5050 4850 5300 4850
+	2950 2450 2950 2550
 $Comp
 L power:+24V #PWR0114
 U 1 1 5DBFA1B6
@@ -550,4 +413,11 @@ Text Label 6300 3550 0    50   ~ 0
 relay_1
 Text Label 6350 4150 0    50   ~ 0
 relay_2
+Wire Wire Line
+	2950 4500 5600 4500
+Wire Wire Line
+	2950 2550 3400 2550
+Connection ~ 2950 2550
+Wire Wire Line
+	2950 2550 2950 4500
 $EndSCHEMATC

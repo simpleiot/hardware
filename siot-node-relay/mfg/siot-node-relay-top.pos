@@ -1,0 +1,12 @@
+### Module positions - created on Wed 08 Jan 2020 09:34:41 AM EST ###
+### Printed by Pcbnew version kicad 5.1.4
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val              Package                                                   PosX       PosY       Rot  Side
+C1        2.2uF_50V        C_0603_1608Metric                                     191.7500  -107.0000  180.0000  top
+C2        2.2uF_50V        C_0603_1608Metric                                     182.5000  -112.7500   90.0000  top
+D1        RECT_50V_1A      D_SMA                                                 171.5500  -107.2500    0.0000  top
+J1        xConnect_smd     xConnect_smd                                          164.5000  -105.5000  180.0000  top
+J2        xConnect_smd     xConnect_smd                                          195.1500   -98.5000  180.0000  top
+U2        ADP7142ARDZ-5.0  SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm_ThermalVias   189.7500  -111.0000    0.0000  top
+## End

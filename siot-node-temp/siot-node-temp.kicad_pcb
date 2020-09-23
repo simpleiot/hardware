@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 10)
+    (drawings 11)
     (tracks 58)
     (zones 0)
     (modules 9)
@@ -484,6 +484,9 @@
     )
   )
 
+  (gr_text "SIOT Temp\nv2" (at 112.4 67.8 90) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.2)))
+  )
   (gr_text B (at 112.8 54.2) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )

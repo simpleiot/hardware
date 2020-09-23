@@ -1,0 +1,753 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "rPI/Odroid Expansion"
+Date "2019-12-10"
+Rev "v1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	1600 1750 950  1750
+Wire Wire Line
+	1600 1850 950  1850
+Text Label 1050 1750 0    50   ~ 0
+I2C_SDA
+Text Label 1050 1850 0    50   ~ 0
+I2C_SCL
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5DF03B35
+P 1500 1400
+F 0 "#PWR01" H 1500 1250 50  0001 C CNN
+F 1 "+3.3V" H 1515 1573 50  0000 C CNN
+F 2 "" H 1500 1400 50  0001 C CNN
+F 3 "" H 1500 1400 50  0001 C CNN
+	1    1500 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR08
+U 1 1 5DF04007
+P 2250 1400
+F 0 "#PWR08" H 2250 1250 50  0001 C CNN
+F 1 "+5V" H 2265 1573 50  0000 C CNN
+F 2 "" H 2250 1400 50  0001 C CNN
+F 3 "" H 2250 1400 50  0001 C CNN
+	1    2250 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5DF04936
+P 1550 3650
+F 0 "#PWR02" H 1550 3400 50  0001 C CNN
+F 1 "GND" H 1555 3477 50  0000 C CNN
+F 2 "" H 1550 3650 50  0001 C CNN
+F 3 "" H 1550 3650 50  0001 C CNN
+	1    1550 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5DF04F9D
+P 2150 3650
+F 0 "#PWR03" H 2150 3400 50  0001 C CNN
+F 1 "GND" H 2155 3477 50  0000 C CNN
+F 2 "" H 2150 3650 50  0001 C CNN
+F 3 "" H 2150 3650 50  0001 C CNN
+	1    2150 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1400 1500 1650
+Wire Wire Line
+	1500 1650 1600 1650
+Wire Wire Line
+	1500 1650 1500 2450
+Wire Wire Line
+	1500 2450 1600 2450
+Connection ~ 1500 1650
+Wire Wire Line
+	2250 1400 2250 1650
+Wire Wire Line
+	2250 1650 2100 1650
+Wire Wire Line
+	2250 1650 2250 1750
+Wire Wire Line
+	2250 1750 2100 1750
+Connection ~ 2250 1650
+Wire Wire Line
+	1600 2050 1550 2050
+Wire Wire Line
+	1550 2050 1550 2850
+Wire Wire Line
+	1600 2850 1550 2850
+Connection ~ 1550 2850
+Wire Wire Line
+	1550 2850 1550 3550
+Wire Wire Line
+	1600 3550 1550 3550
+Connection ~ 1550 3550
+Wire Wire Line
+	1550 3550 1550 3650
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even J3
+U 1 1 5DF007AE
+P 1800 2550
+F 0 "J3" H 1850 3667 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 1850 3576 50  0000 C CNN
+F 2 "" H 1800 2550 50  0001 C CNN
+F 3 "~" H 1800 2550 50  0001 C CNN
+	1    1800 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1850 2150 1850
+Wire Wire Line
+	2150 1850 2150 2250
+Wire Wire Line
+	2100 2250 2150 2250
+Connection ~ 2150 2250
+Wire Wire Line
+	2150 2250 2150 2550
+Wire Wire Line
+	2100 2550 2150 2550
+Connection ~ 2150 2550
+Wire Wire Line
+	2150 2550 2150 3050
+Wire Wire Line
+	2100 3050 2150 3050
+Connection ~ 2150 3050
+Wire Wire Line
+	2150 3050 2150 3250
+Wire Wire Line
+	2100 3250 2150 3250
+Connection ~ 2150 3250
+Wire Wire Line
+	2150 3250 2150 3650
+Wire Wire Line
+	1600 1950 950  1950
+Wire Wire Line
+	1600 2150 950  2150
+Text Label 1050 1950 0    50   ~ 0
+W1_BUSA
+Text Label 1050 2150 0    50   ~ 0
+W1_BUSB
+$Comp
+L bec-interface:DS2484R U1
+U 1 1 5DF0940B
+P 4450 1800
+F 0 "U1" H 4450 2275 50  0000 C CNN
+F 1 "DS2484R" H 4450 2184 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 4500 1350 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS2484.pdf" H 4200 1900 50  0001 C CNN
+F 4 "DS2484R+T" H 4450 1250 50  0001 C CNN "MPN"
+F 5 "Maxim Integrated" H 4500 1150 50  0001 C CNN "Manufacturer"
+	1    4450 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR014
+U 1 1 5DF0A17A
+P 4900 1450
+F 0 "#PWR014" H 4900 1300 50  0001 C CNN
+F 1 "+5V" H 4915 1623 50  0000 C CNN
+F 2 "" H 4900 1450 50  0001 C CNN
+F 3 "" H 4900 1450 50  0001 C CNN
+	1    4900 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 1800 3450 1800
+Wire Wire Line
+	4100 2050 3450 2050
+Text Label 3550 1800 0    50   ~ 0
+I2C_SDA
+Text Label 3550 2050 0    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	4100 1550 3450 1550
+Text Label 3550 1550 0    50   ~ 0
+W1_BUSA
+Wire Wire Line
+	4900 1450 4900 1550
+Wire Wire Line
+	4900 1550 4800 1550
+$Comp
+L power:GND #PWR012
+U 1 1 5DF0BCB2
+P 4850 2100
+F 0 "#PWR012" H 4850 1850 50  0001 C CNN
+F 1 "GND" H 4855 1927 50  0000 C CNN
+F 2 "" H 4850 2100 50  0001 C CNN
+F 3 "" H 4850 2100 50  0001 C CNN
+	1    4850 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2050 4850 2050
+Wire Wire Line
+	4850 2050 4850 2100
+$Comp
+L Connector:RJ9 J1
+U 1 1 5DF0C900
+P 1700 4850
+F 0 "J1" H 1757 5317 50  0000 C CNN
+F 1 "RJ9" H 1757 5226 50  0000 C CNN
+F 2 "" V 1700 4900 50  0001 C CNN
+F 3 "~" V 1700 4900 50  0001 C CNN
+	1    1700 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L bec-interface:DS2484R U2
+U 1 1 5DF10471
+P 4450 3100
+F 0 "U2" H 4450 3575 50  0000 C CNN
+F 1 "DS2484R" H 4450 3484 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 4500 2650 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS2484.pdf" H 4200 3200 50  0001 C CNN
+F 4 "DS2484R+T" H 4450 2550 50  0001 C CNN "MPN"
+F 5 "Maxim Integrated" H 4500 2450 50  0001 C CNN "Manufacturer"
+	1    4450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR015
+U 1 1 5DF10477
+P 4900 2750
+F 0 "#PWR015" H 4900 2600 50  0001 C CNN
+F 1 "+5V" H 4915 2923 50  0000 C CNN
+F 2 "" H 4900 2750 50  0001 C CNN
+F 3 "" H 4900 2750 50  0001 C CNN
+	1    4900 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3100 3450 3100
+Wire Wire Line
+	4100 3350 3450 3350
+Text Label 3550 3100 0    50   ~ 0
+I2C_SDA
+Text Label 3550 3350 0    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	4100 2850 3450 2850
+Text Label 3550 2850 0    50   ~ 0
+W1_BUSA
+Wire Wire Line
+	4900 2750 4900 2850
+Wire Wire Line
+	4900 2850 4800 2850
+$Comp
+L power:GND #PWR013
+U 1 1 5DF10485
+P 4850 3400
+F 0 "#PWR013" H 4850 3150 50  0001 C CNN
+F 1 "GND" H 4855 3227 50  0000 C CNN
+F 2 "" H 4850 3400 50  0001 C CNN
+F 3 "" H 4850 3400 50  0001 C CNN
+	1    4850 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3350 4850 3350
+Wire Wire Line
+	4850 3350 4850 3400
+Wire Wire Line
+	4800 1800 5300 1800
+Wire Wire Line
+	4800 3100 5350 3100
+Text Label 4950 1800 0    50   ~ 0
+W1_A
+Text Label 5000 3100 0    50   ~ 0
+W1_B
+$Comp
+L power:GND #PWR05
+U 1 1 5DF11EBE
+P 2150 5000
+F 0 "#PWR05" H 2150 4750 50  0001 C CNN
+F 1 "GND" H 2155 4827 50  0000 C CNN
+F 2 "" H 2150 5000 50  0001 C CNN
+F 3 "" H 2150 5000 50  0001 C CNN
+	1    2150 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4850 2750 4850
+Wire Wire Line
+	2100 4750 2150 4750
+Wire Wire Line
+	2150 4750 2150 4950
+Wire Wire Line
+	2150 4950 2100 4950
+Connection ~ 2150 4950
+Wire Wire Line
+	2150 4950 2150 5000
+$Comp
+L power:+5V #PWR04
+U 1 1 5DF13F33
+P 2150 4600
+F 0 "#PWR04" H 2150 4450 50  0001 C CNN
+F 1 "+5V" H 2165 4773 50  0000 C CNN
+F 2 "" H 2150 4600 50  0001 C CNN
+F 3 "" H 2150 4600 50  0001 C CNN
+	1    2150 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4650 2150 4650
+Wire Wire Line
+	2150 4650 2150 4600
+Text Label 2400 4850 0    50   ~ 0
+W1_A
+$Comp
+L Connector:RJ9 J2
+U 1 1 5DF1659C
+P 1700 5900
+F 0 "J2" H 1757 6367 50  0000 C CNN
+F 1 "RJ9" H 1757 6276 50  0000 C CNN
+F 2 "" V 1700 5950 50  0001 C CNN
+F 3 "~" V 1700 5950 50  0001 C CNN
+	1    1700 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5DF165A2
+P 2150 6050
+F 0 "#PWR07" H 2150 5800 50  0001 C CNN
+F 1 "GND" H 2155 5877 50  0000 C CNN
+F 2 "" H 2150 6050 50  0001 C CNN
+F 3 "" H 2150 6050 50  0001 C CNN
+	1    2150 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 5900 2750 5900
+Wire Wire Line
+	2100 5800 2150 5800
+Wire Wire Line
+	2150 5800 2150 6000
+Wire Wire Line
+	2150 6000 2100 6000
+Connection ~ 2150 6000
+Wire Wire Line
+	2150 6000 2150 6050
+$Comp
+L power:+5V #PWR06
+U 1 1 5DF165AE
+P 2150 5650
+F 0 "#PWR06" H 2150 5500 50  0001 C CNN
+F 1 "+5V" H 2165 5823 50  0000 C CNN
+F 2 "" H 2150 5650 50  0001 C CNN
+F 3 "" H 2150 5650 50  0001 C CNN
+	1    2150 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 5700 2150 5700
+Wire Wire Line
+	2150 5700 2150 5650
+Text Label 2400 5900 0    50   ~ 0
+W1_B
+$Comp
+L Timer_RTC:PCF8563TS U3
+U 1 1 5DF1C663
+P 4450 5300
+F 0 "U3" H 4650 4950 50  0000 C CNN
+F 1 "PCF8563TS" H 4700 5650 50  0000 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 4450 5300 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PCF8563.pdf" H 4450 5300 50  0001 C CNN
+	1    4450 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 5100 4850 5100
+Text Label 4950 5100 0    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	5500 5200 4850 5200
+Text Label 4950 5200 0    50   ~ 0
+I2C_SDA
+$Comp
+L power:GND #PWR011
+U 1 1 5DF1F863
+P 4450 5700
+F 0 "#PWR011" H 4450 5450 50  0001 C CNN
+F 1 "GND" H 4455 5527 50  0000 C CNN
+F 2 "" H 4450 5700 50  0001 C CNN
+F 3 "" H 4450 5700 50  0001 C CNN
+	1    4450 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 5DF21B4D
+P 3800 5300
+F 0 "Y1" V 3754 5431 50  0000 L CNN
+F 1 "32.768KHz" V 3800 4750 50  0000 L CNN
+F 2 "" H 3800 5300 50  0001 C CNN
+F 3 "~" H 3800 5300 50  0001 C CNN
+	1    3800 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 5100 3800 5100
+Wire Wire Line
+	3800 5100 3800 5150
+Wire Wire Line
+	3800 5450 3800 5500
+Wire Wire Line
+	3800 5500 4050 5500
+$Comp
+L Device:D_Schottky D1
+U 1 1 5DF24B12
+P 3850 4300
+F 0 "D1" H 3850 4176 50  0000 C CNN
+F 1 "D_Schottky" H 3850 4175 50  0001 C CNN
+F 2 "" H 3850 4300 50  0001 C CNN
+F 3 "~" H 3850 4300 50  0001 C CNN
+	1    3850 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5DF2599B
+P 4200 4500
+F 0 "C1" H 4400 4550 50  0000 R CNN
+F 1 "0.1uF" H 4550 4450 50  0000 R CNN
+F 2 "" H 4238 4350 50  0001 C CNN
+F 3 "~" H 4200 4500 50  0001 C CNN
+	1    4200 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR09
+U 1 1 5DF2D35E
+P 3600 4250
+F 0 "#PWR09" H 3600 4100 50  0001 C CNN
+F 1 "+3.3V" H 3615 4423 50  0000 C CNN
+F 2 "" H 3600 4250 50  0001 C CNN
+F 3 "" H 3600 4250 50  0001 C CNN
+	1    3600 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4250 3600 4300
+Wire Wire Line
+	3600 4300 3700 4300
+Wire Wire Line
+	4000 4300 4200 4300
+Wire Wire Line
+	4200 4300 4200 4350
+$Comp
+L power:GND #PWR010
+U 1 1 5DF3020E
+P 4200 4650
+F 0 "#PWR010" H 4200 4400 50  0001 C CNN
+F 1 "GND" H 4205 4477 50  0000 C CNN
+F 2 "" H 4200 4650 50  0001 C CNN
+F 3 "" H 4200 4650 50  0001 C CNN
+	1    4200 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4300 4450 4300
+Wire Wire Line
+	4450 4300 4450 4900
+Connection ~ 4200 4300
+Connection ~ 4450 4300
+Wire Wire Line
+	4550 4300 4450 4300
+$Comp
+L dk_Battery-Holders-Clips-Contacts:BS-7 BAT1
+U 1 1 5DF37991
+P 5100 4550
+F 0 "BAT1" H 5228 4603 60  0000 L CNN
+F 1 "Coin" H 5228 4497 60  0000 L CNN
+F 2 "digikey-footprints:Battery_Holder_Coin_2032_BS-7" H 5300 4750 60  0001 L CNN
+F 3 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" V 5300 4850 60  0001 L CNN
+F 4 "BS-7-ND" H 5300 4950 60  0001 L CNN "Digi-Key_PN"
+F 5 "BS-7" H 5300 5050 60  0001 L CNN "MPN"
+F 6 "Battery Products" H 5300 5150 60  0001 L CNN "Category"
+F 7 "Battery Holders, Clips, Contacts" H 5300 5250 60  0001 L CNN "Family"
+F 8 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" H 5300 5350 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/mpd-memory-protection-devices/BS-7/BS-7-ND/389447" H 5300 5450 60  0001 L CNN "DK_Detail_Page"
+F 10 "BATTERY HOLDER COIN 20MM PC PIN" H 5300 5550 60  0001 L CNN "Description"
+F 11 "MPD (Memory Protection Devices)" H 5300 5650 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5300 5750 60  0001 L CNN "Status"
+	1    5100 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D2
+U 1 1 5DF34F08
+P 4700 4300
+F 0 "D2" H 4700 4424 50  0000 C CNN
+F 1 "D_Schottky" H 4700 4175 50  0001 C CNN
+F 2 "" H 4700 4300 50  0001 C CNN
+F 3 "~" H 4700 4300 50  0001 C CNN
+	1    4700 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4300 5100 4300
+Wire Wire Line
+	5100 4300 5100 4350
+$Comp
+L power:GND #PWR016
+U 1 1 5DF3B814
+P 5100 4750
+F 0 "#PWR016" H 5100 4500 50  0001 C CNN
+F 1 "GND" H 5105 4577 50  0000 C CNN
+F 2 "" H 5100 4750 50  0001 C CNN
+F 3 "" H 5100 4750 50  0001 C CNN
+	1    5100 4750
+	1    0    0    -1  
+$EndComp
+Text Notes 3900 1150 0    50   ~ 0
+DS2484 i2c address = 0x18\nEach chip is individually enabled\nby setting SLPZ high
+Text Notes 3900 6100 0    50   ~ 0
+PCF8563 I2C address = 0x51
+Wire Wire Line
+	2100 1950 2700 1950
+Wire Wire Line
+	2100 2050 2700 2050
+Text Label 2300 1950 0    50   ~ 0
+UART_TX
+Text Label 2300 2050 0    50   ~ 0
+UART_RX
+Wire Wire Line
+	1600 2550 950  2550
+Wire Wire Line
+	1600 2650 950  2650
+Wire Wire Line
+	1600 2750 950  2750
+Text Label 1000 2550 0    50   ~ 0
+SPI_MOSI
+Text Label 1000 2650 0    50   ~ 0
+SPI_MISO
+Text Label 1000 2750 0    50   ~ 0
+SPI_CLK
+Wire Wire Line
+	2100 2950 2700 2950
+Wire Wire Line
+	1600 2950 950  2950
+Text Label 2350 2950 0    50   ~ 0
+ID_SCL
+Text Label 1000 2950 0    50   ~ 0
+ID_SDA
+Wire Wire Line
+	2100 2750 2700 2750
+Wire Wire Line
+	2100 2850 2700 2850
+Text Label 2300 2750 0    50   ~ 0
+SPI_CS0
+Text Label 2300 2850 0    50   ~ 0
+SPI_CS1
+$Comp
+L MCU_ST_STM32F0:STM32F042K4Tx U4
+U 1 1 5F6D1E5B
+P 6950 1950
+F 0 "U4" H 7100 900 50  0000 C CNN
+F 1 "STM32F042K4Tx" H 7350 1000 50  0000 C CNN
+F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 6550 1050 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 6950 1950 50  0001 C CNN
+	1    6950 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR017
+U 1 1 5F6D5E1B
+P 6850 850
+F 0 "#PWR017" H 6850 700 50  0001 C CNN
+F 1 "+3.3V" H 6865 1023 50  0000 C CNN
+F 2 "" H 6850 850 50  0001 C CNN
+F 3 "" H 6850 850 50  0001 C CNN
+	1    6850 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 850  6850 950 
+Wire Wire Line
+	6850 950  6950 950 
+Wire Wire Line
+	6950 950  6950 1050
+Connection ~ 6850 950 
+Wire Wire Line
+	6850 950  6850 1050
+Wire Wire Line
+	6950 950  7050 950 
+Wire Wire Line
+	7050 950  7050 1050
+Connection ~ 6950 950 
+$Comp
+L power:GND #PWR018
+U 1 1 5F6DCE95
+P 6850 3050
+F 0 "#PWR018" H 6850 2800 50  0001 C CNN
+F 1 "GND" H 6855 2877 50  0000 C CNN
+F 2 "" H 6850 3050 50  0001 C CNN
+F 3 "" H 6850 3050 50  0001 C CNN
+	1    6850 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2950 6850 3000
+Wire Wire Line
+	6850 3000 6950 3000
+Wire Wire Line
+	6950 3000 6950 2950
+Connection ~ 6850 3000
+Wire Wire Line
+	6850 3000 6850 3050
+Text Notes 950  5350 0    50   ~ 0
+1-Wire\nPorts
+$Comp
+L Connector:RJ45 J4
+U 1 1 5F6E35A3
+P 1650 6800
+F 0 "J4" H 1320 6804 50  0000 R CNN
+F 1 "RJ45" H 1320 6895 50  0000 R CNN
+F 2 "" V 1650 6825 50  0001 C CNN
+F 3 "~" V 1650 6825 50  0001 C CNN
+	1    1650 6800
+	1    0    0    1   
+$EndComp
+Text Notes 1050 6900 2    50   ~ 0
+CAN\nPort
+$Comp
+L power:+5V #PWR019
+U 1 1 5F6E55E6
+P 2250 6700
+F 0 "#PWR019" H 2250 6550 50  0001 C CNN
+F 1 "+5V" H 2265 6873 50  0000 C CNN
+F 2 "" H 2250 6700 50  0001 C CNN
+F 3 "" H 2250 6700 50  0001 C CNN
+	1    2250 6700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 6700 2050 6700
+$Comp
+L power:GND #PWR020
+U 1 1 5F6E8344
+P 2250 7000
+F 0 "#PWR020" H 2250 6750 50  0001 C CNN
+F 1 "GND" H 2255 6827 50  0000 C CNN
+F 2 "" H 2250 7000 50  0001 C CNN
+F 3 "" H 2250 7000 50  0001 C CNN
+	1    2250 7000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 7000 2250 7000
+Wire Wire Line
+	2050 6800 2700 6800
+Wire Wire Line
+	2050 6900 2700 6900
+Text Label 2550 6900 2    50   ~ 0
+CAN_H
+Text Label 2550 6800 2    50   ~ 0
+CAN_L
+$Comp
+L bec-interface:TSC2046 U5
+U 1 1 5F6BDF9C
+P 6900 4200
+F 0 "U5" H 7050 3650 50  0000 C CNN
+F 1 "TSC2046" H 7150 3750 50  0000 C CNN
+F 2 "Package_SO:SSOP-16_3.9x4.9mm_P0.635mm" H 6900 3600 50  0001 C CIN
+F 3 "https://www.ti.com/lit/ds/symlink/tsc2046.pdf" H 7100 3650 50  0001 C CNN
+	1    6900 4200
+	1    0    0    -1  
+$EndComp
+Text Notes 7250 1050 0    50   ~ 0
+CAN MCU
+Text Notes 7050 3750 0    50   ~ 0
+Touchscreen
+$Comp
+L power:GND #PWR?
+U 1 1 5F6C06DD
+P 6900 4700
+F 0 "#PWR?" H 6900 4450 50  0001 C CNN
+F 1 "GND" H 6905 4527 50  0000 C CNN
+F 2 "" H 6900 4700 50  0001 C CNN
+F 3 "" H 6900 4700 50  0001 C CNN
+	1    6900 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F6C0B11
+P 6900 3700
+F 0 "#PWR?" H 6900 3550 50  0001 C CNN
+F 1 "+3.3V" H 6915 3873 50  0000 C CNN
+F 2 "" H 6900 3700 50  0001 C CNN
+F 3 "" H 6900 3700 50  0001 C CNN
+	1    6900 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3900 8050 3900
+Wire Wire Line
+	7400 4000 8050 4000
+Wire Wire Line
+	7400 4100 8050 4100
+Wire Wire Line
+	7400 4300 8050 4300
+Text Label 7550 4100 0    50   ~ 0
+SPI_CLK
+Text Label 7550 4000 0    50   ~ 0
+SPI_MISO
+Text Label 7550 3900 0    50   ~ 0
+SPI_MOSI
+Text Label 7550 4300 0    50   ~ 0
+SPI_CS1
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5F6D4F11
+P 9650 1100
+F 0 "J?" H 9730 1092 50  0000 L CNN
+F 1 "Conn_01x04" H 9730 1001 50  0000 L CNN
+F 2 "" H 9650 1100 50  0001 C CNN
+F 3 "~" H 9650 1100 50  0001 C CNN
+	1    9650 1100
+	1    0    0    -1  
+$EndComp
+Text Notes 9350 800  0    50   ~ 0
+Display Interface\n
+Text Notes 9750 1350 0    50   ~ 0
+Touchscreen
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5F6D75AC
+P 9650 1600
+F 0 "J?" H 9730 1592 50  0000 L CNN
+F 1 "Conn_01x02" H 9730 1501 50  0000 L CNN
+F 2 "" H 9650 1600 50  0001 C CNN
+F 3 "~" H 9650 1600 50  0001 C CNN
+	1    9650 1600
+	1    0    0    -1  
+$EndComp
+Text Notes 9700 1850 0    50   ~ 0
+Backlight\n
+$Comp
+L bec-lcd:CFAF320480C5-035T-TS LCD?
+U 1 1 5F6E74FE
+P 9800 3950
+F 0 "LCD?" H 9700 1900 50  0000 L CNN
+F 1 "CFAF320480C5-035T-TS" H 9350 2000 50  0000 L CNN
+F 2 "" H 9550 4250 50  0001 C CNN
+F 3 "https://www.crystalfontz.com/products/document/3592/CFAF320480C5-035T-TSDatasheet.pdf" H 9550 4250 50  0001 C CNN
+	1    9800 3950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -12,6 +12,7 @@ _autosave-*
 *-save.pro
 *-save.kicad_pcb
 fp-info-cache
+*.pyc
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -27,3 +28,4 @@ fp-info-cache
 import
 .DS_Store
 *.sch-bak
+*-rescue.*

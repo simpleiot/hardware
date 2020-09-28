@@ -12,6 +12,12 @@ K screw terminal
 F https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935174.pdf
 $ENDCMP
 #
+$CMP batt-2032
+D BATTERY HOLDER COIN 20MM PC PIN
+K BS-7-ND
+F http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf
+$ENDCMP
+#
 $CMP solder-pads_01x02
 D Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector

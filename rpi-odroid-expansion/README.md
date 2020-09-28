@@ -2,10 +2,19 @@
 
 ## Features
 
+This board is designed to provide a number of expansion features to Raspberry PI
+and ODROID-C4 SBCs.
+
 - CAN
 - RS485
 - 1-wire
 - LCD/Touchscreen
+- pass through rPI expansion connector to provide use of unused pins.
+
+## MPU Interface
+
+- [rPI4 pinout](https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/README.md)
+- [ODROID-C4 pinout](https://wiki.odroid.com/odroid-c4/hardware/expansion_connectors)
 
 ## MPU/MCU communication link
 
@@ -18,7 +27,21 @@ the expansion board.
 - may only be two hardware SPI chip selects, so not sure how well more than 2
   SPI devices will work.
 
-## CAN
+## MCU Implementation
+
+A STM32F042K4Tx MCU is used to implement the following functionality:
+
+- CAN Interface
+- Board ID EEPROM (implements i2c slave)
+
+Reference
+
+- [ST Web Site](https://www.st.com/en/microcontrollers-microprocessors/stm32f042k4.html)
+- [Datasheet](https://www.st.com/resource/en/datasheet/stm32f042k4.pdf)
+- [Reference manual](https://www.st.com/resource/en/reference_manual/dm00031936-stm32f0x1stm32f0x2stm32f0x8-advanced-armbased-32bit-mcus-stmicroelectronics.pdf)
+- [Programming manual](https://www.st.com/resource/en/programming_manual/dm00051352-stm32f0xxx-cortexm0-programming-manual-stmicroelectronics.pdf)
+
+### CAN
 
 Can is typically implemented using a SPI CAN controller (ex MCP2517), but these
 devices do not offer any buffering so are a poor choice for non real-time
@@ -29,4 +52,6 @@ interface and hopefully leverage firmware from the following projects:
 - https://github.com/normaldotcom/candleLight_fw
 - SLCAN
 
-## RS485
+### HAT ID EEPROM
+
+### RS485

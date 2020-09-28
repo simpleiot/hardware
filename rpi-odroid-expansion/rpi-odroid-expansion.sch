@@ -109,8 +109,6 @@ F 3 "~" H 1500 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 1500 1850 1500
-Wire Wire Line
 	1850 1500 1850 1900
 Wire Wire Line
 	1800 1900 1850 1900
@@ -165,16 +163,16 @@ F 3 "" H 4300 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 1600 2850 1600
+	3500 1600 3050 1600
 Wire Wire Line
-	3500 1850 2850 1850
-Text Label 2950 1600 0    50   ~ 0
+	3500 1850 3050 1850
+Text Label 3100 1600 0    50   ~ 0
 I2C_SDA
-Text Label 2950 1850 0    50   ~ 0
+Text Label 3100 1850 0    50   ~ 0
 I2C_SCL
 Wire Wire Line
-	3500 1350 2850 1350
-Text Label 2950 1350 0    50   ~ 0
+	3500 1350 3050 1350
+Text Label 3100 1350 0    50   ~ 0
 W1_BUSA
 Wire Wire Line
 	4300 1250 4300 1350
@@ -231,16 +229,16 @@ F 3 "" H 4300 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 2900 2850 2900
+	3500 2900 3050 2900
 Wire Wire Line
-	3500 3150 2850 3150
-Text Label 2950 2900 0    50   ~ 0
+	3500 3150 3050 3150
+Text Label 3100 2900 0    50   ~ 0
 I2C_SDA
-Text Label 2950 3150 0    50   ~ 0
+Text Label 3100 3150 0    50   ~ 0
 I2C_SCL
 Wire Wire Line
-	3500 2650 2850 2650
-Text Label 2950 2650 0    50   ~ 0
+	3500 2650 3050 2650
+Text Label 3100 2650 0    50   ~ 0
 W1_BUSA
 Wire Wire Line
 	4300 2550 4300 2650
@@ -262,12 +260,12 @@ Wire Wire Line
 Wire Wire Line
 	4250 3150 4250 3200
 Wire Wire Line
-	4200 1600 4700 1600
+	4200 1600 4500 1600
 Wire Wire Line
-	4200 2900 4750 2900
-Text Label 4350 1600 0    50   ~ 0
+	4200 2900 4550 2900
+Text Label 4250 1600 0    50   ~ 0
 W1_A
-Text Label 4400 2900 0    50   ~ 0
+Text Label 4300 2900 0    50   ~ 0
 W1_B
 $Comp
 L power:GND #PWR05
@@ -794,9 +792,9 @@ CAN_TX
 Text Label 4050 6300 0    50   ~ 0
 CAN_RX
 Wire Wire Line
-	6950 2450 7400 2450
+	6950 2450 7550 2450
 Wire Wire Line
-	6950 2350 7400 2350
+	6950 2350 7550 2350
 Text Label 7050 2450 0    50   ~ 0
 CAN_TX
 Text Label 7050 2350 0    50   ~ 0
@@ -910,7 +908,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 2800 2400 2800
 Text Label 1950 2800 0    50   ~ 0
-LCD_RSTn
+GPIO12
 Wire Wire Line
 	8600 3300 9450 3300
 Text Label 8700 3300 0    50   ~ 0
@@ -1056,8 +1054,6 @@ Text Label 8800 6100 0    50   ~ 0
 LCD_DC
 Wire Wire Line
 	1800 3000 2400 3000
-Text Label 1950 3000 0    50   ~ 0
-LCD_DC
 $Comp
 L bec-interface:MAX13487E U7
 U 1 1 5F957F2D
@@ -1193,15 +1189,15 @@ Wire Wire Line
 Wire Wire Line
 	1300 3100 650  3100
 Text Label 700  2700 0    50   ~ 0
-GPIO1
-Text Label 700  2800 0    50   ~ 0
-GPIO2
-Text Label 700  2900 0    50   ~ 0
-GPIO3
-Text Label 700  3000 0    50   ~ 0
-GPIO4
-Text Label 700  3100 0    50   ~ 0
 GPIO5
+Text Label 700  2800 0    50   ~ 0
+GPIO6
+Text Label 700  2900 0    50   ~ 0
+GPIO13
+Text Label 700  3000 0    50   ~ 0
+GPIO19
+Text Label 700  3100 0    50   ~ 0
+GPIO26
 Wire Wire Line
 	5300 2050 5950 2050
 Wire Wire Line
@@ -1271,4 +1267,76 @@ Wire Wire Line
 	9350 1650 9350 1600
 Wire Wire Line
 	9350 1600 9450 1600
+Wire Wire Line
+	1800 1600 2400 1600
+Text Label 1900 1600 0    50   ~ 0
+UART_TX
+Text Label 1900 1700 0    50   ~ 0
+UART_RX
+Wire Wire Line
+	1800 1700 2400 1700
+Wire Wire Line
+	1800 1500 1850 1500
+Wire Wire Line
+	1300 1900 650  1900
+Wire Wire Line
+	1300 2000 650  2000
+Text Label 750  1900 0    50   ~ 0
+GPIO27
+Text Label 750  2000 0    50   ~ 0
+GPIO22
+Wire Wire Line
+	1800 3100 2400 3100
+Wire Wire Line
+	1800 3200 2400 3200
+Text Label 1950 3100 0    50   ~ 0
+LCD_DC
+Text Label 1950 3200 0    50   ~ 0
+LCD_RSTn
+Wire Wire Line
+	1800 1800 2400 1800
+Wire Wire Line
+	1800 2000 2400 2000
+Wire Wire Line
+	1800 2100 2400 2100
+Wire Wire Line
+	1800 2300 2400 2300
+Text Label 1900 1800 0    50   ~ 0
+GPIO18
+Text Label 1950 2000 0    50   ~ 0
+GPIO23
+Text Label 1950 2100 0    50   ~ 0
+GPIO24
+Text Label 2050 2300 0    50   ~ 0
+GPIO25
+Wire Wire Line
+	6950 1750 7550 1750
+Wire Wire Line
+	6950 1850 7550 1850
+Wire Wire Line
+	6950 1950 7550 1950
+Text Label 7050 1750 0    50   ~ 0
+SPI_CLK
+Text Label 7050 1850 0    50   ~ 0
+SPI_MOSI
+Text Label 7050 1950 0    50   ~ 0
+SPI_MISO
+Wire Wire Line
+	5300 2550 5950 2550
+Text Label 5350 2550 0    50   ~ 0
+ID_SCL
+Wire Wire Line
+	5950 2650 5300 2650
+Text Label 5350 2650 0    50   ~ 0
+ID_SDA
+Text Label 1950 3000 0    50   ~ 0
+MCU_RSTn
+Wire Wire Line
+	5950 1250 5300 1250
+Text Label 5350 1250 0    50   ~ 0
+MCU_RSTn
+Wire Wire Line
+	6950 1650 7550 1650
+Text Label 7050 1650 0    50   ~ 0
+SPI_CS2
 $EndSCHEMATC

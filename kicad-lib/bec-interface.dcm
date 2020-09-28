@@ -20,6 +20,11 @@ $CMP DS28E17
 F https://datasheets.maximintegrated.com/en/ds/DS28E17.pdf
 $ENDCMP
 #
+$CMP MAX13487E
+D RS-485 Transceiver with AutoDirection Control
+F https://datasheets.maximintegrated.com/en/ds/MAX13487E-MAX13488E.pdf
+$ENDCMP
+#
 $CMP TSC2046
 D Single-supply, 12bit, 4 ch, touch screen driver, 2.2 - 5.25 VDD, -40 to +85 C, QSPI, SPI, 3-wire serial interface, SSOP-16
 K Single-supply, 12bit, 4 ch, touch screen driver, 2.2 - 5.25 VDD, -40 to +85 C, QSPI, SPI, 3-wire serial interface, SSOP-16

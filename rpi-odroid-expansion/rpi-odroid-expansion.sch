@@ -1227,7 +1227,7 @@ LCD Configured \nfor 8-bit, 4-wire\nSPI mode
 Text Notes 9450 2050 0    50   ~ 0
 Backlight requires\n90mA @ ~3.2V\n(5v-3.2v)/90ma = ~20ohm
 Text Notes 5950 5900 0    50   ~ 0
-Notes:\n1) TODO: add RS485 bias resistors\n2) TODO: add decoupling\n3) TODO: ISP for MCU (perhaps USB port)\n4) TODO: finialize connectors
+Notes:\n1) TODO: add RS485 bias resistors\n2) TODO: add decoupling\n3) TODO: ISP for MCU (perhaps USB port)\n4) TODO: finialize connectors\n5) TODO: wire SPI from MPU to MCU\n6) TODO: bring out unused MPU/MCU pins to test points
 $Comp
 L Device:R_US R1
 U 1 1 5FA53268

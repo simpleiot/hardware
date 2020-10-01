@@ -10,6 +10,8 @@ and ODROID-C4 SBCs.
 - 1-wire
 - LCD/Touchscreen
 - pass through rPI expansion connector to provide use of unused pins.
+- XBee socket (Digi, Nimbelink, etc radios)
+- LoraWan radio
 
 ## MPU Interface
 

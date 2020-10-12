@@ -25,6 +25,18 @@ D RS-485 Transceiver with AutoDirection Control
 F https://datasheets.maximintegrated.com/en/ds/MAX13487E-MAX13488E.pdf
 $ENDCMP
 #
+$CMP MCP2551-I-SN
+D High-Speed CAN Transceiver, 1Mbps, 5V supply, SOIC-8
+K High-Speed CAN Transceiver
+F http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf
+$ENDCMP
+#
+$CMP PCF8563TS
+D Realtime Clock/Calendar I2C Interface, TSSOP-8
+K I2C RTC Clock Calendar
+F https://www.nxp.com/docs/en/data-sheet/PCF8563.pdf
+$ENDCMP
+#
 $CMP TSC2046
 D Single-supply, 12bit, 4 ch, touch screen driver, 2.2 - 5.25 VDD, -40 to +85 C, QSPI, SPI, 3-wire serial interface, SSOP-16
 K Single-supply, 12bit, 4 ch, touch screen driver, 2.2 - 5.25 VDD, -40 to +85 C, QSPI, SPI, 3-wire serial interface, SSOP-16

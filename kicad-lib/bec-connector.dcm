@@ -18,6 +18,12 @@ K BS-7-ND
 F http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf
 $ENDCMP
 #
+$CMP rPI_02x20
+D Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F https://cdn-shop.adafruit.com/product-files/2187/CS25582-40G-M36-0A+(1).jpg
+$ENDCMP
+#
 $CMP solder-pads_01x02
 D Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector

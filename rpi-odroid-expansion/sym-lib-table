@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name rpi-odroid-expansion-rescue)(type Legacy)(uri ${KIPRJMOD}/rpi-odroid-expansion-rescue.lib)(options "")(descr ""))
+)

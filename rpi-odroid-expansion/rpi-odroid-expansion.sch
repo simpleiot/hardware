@@ -98,13 +98,15 @@ Connection ~ 1250 3200
 Wire Wire Line
 	1250 3200 1250 3300
 $Comp
-L Connector_Generic:Conn_02x20_Odd_Even J3
+L bec-connector:rPI_02x20 J3
 U 1 1 5DF007AE
 P 1500 2200
 F 0 "J3" H 1550 3317 50  0000 C CNN
-F 1 "Conn_02x20_Odd_Even" H 1550 3226 50  0000 C CNN
-F 2 "" H 1500 2200 50  0001 C CNN
-F 3 "~" H 1500 2200 50  0001 C CNN
+F 1 "rPI_02x20" H 1550 3226 50  0000 C CNN
+F 2 "Simple Iot:Samtec_HLE-120-02-XXX-DV-BE-XX-XX" H 1500 2200 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2187/CS25582-40G-M36-0A+(1).jpg" H 1500 2200 50  0001 C CNN
+F 4 "C25582-40G-M36-0A" H 1500 2200 50  0001 C CNN "MPN"
+F 5 "Kaweei" H 1500 2200 50  0001 C CNN "Manufacturer"
 	1    1500 2200
 	1    0    0    -1  
 $EndComp
@@ -199,7 +201,7 @@ U 1 1 5DF0C900
 P 1350 4200
 F 0 "J1" H 1407 4667 50  0000 C CNN
 F 1 "RJ9" H 1407 4576 50  0000 C CNN
-F 2 "" V 1350 4250 50  0001 C CNN
+F 2 "Connector_RJ:RJ12_Amphenol_54601" V 1350 4250 50  0001 C CNN
 F 3 "~" V 1350 4250 50  0001 C CNN
 	1    1350 4200
 	1    0    0    -1  
@@ -312,7 +314,7 @@ U 1 1 5DF1659C
 P 1350 5250
 F 0 "J2" H 1407 5717 50  0000 C CNN
 F 1 "RJ9" H 1407 5626 50  0000 C CNN
-F 2 "" V 1350 5300 50  0001 C CNN
+F 2 "Connector_RJ:RJ12_Amphenol_54601" V 1350 5300 50  0001 C CNN
 F 3 "~" V 1350 5300 50  0001 C CNN
 	1    1350 5250
 	1    0    0    -1  
@@ -357,13 +359,15 @@ Wire Wire Line
 Text Label 2050 5250 0    50   ~ 0
 W1_B
 $Comp
-L Timer_RTC:PCF8563TS U3
+L bec-interface:PCF8563TS U3
 U 1 1 5DF1C663
 P 3850 5100
 F 0 "U3" H 4050 4750 50  0000 C CNN
 F 1 "PCF8563TS" H 4100 5450 50  0000 C CNN
 F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 3850 5100 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/PCF8563.pdf" H 3850 5100 50  0001 C CNN
+F 3 "https://www.nxp.com/docs/en/data-sheet/PCF8563.pdf" H 3850 5100 50  0001 C CNN
+F 4 "PCF8563TS/5" H 3850 5100 50  0001 C CNN "MPN"
+F 5 "NXP" H 3850 5100 50  0001 C CNN "Manufacturer"
 	1    3850 5100
 	1    0    0    -1  
 $EndComp
@@ -552,13 +556,15 @@ SPI_CS0
 Text Label 2000 2500 0    50   ~ 0
 SPI_CS1
 $Comp
-L MCU_ST_STM32F0:STM32F042K4Tx U4
+L bec-cpu:STM32F042K4T6 U4
 U 1 1 5F6D1E5B
 P 6450 1950
 F 0 "U4" H 6600 900 50  0000 C CNN
-F 1 "STM32F042K4Tx" H 6850 1000 50  0000 C CNN
+F 1 "STM32F042K4T6" H 6850 1000 50  0000 C CNN
 F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 6050 1050 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 6450 1950 50  0001 C CNN
+F 4 "STM32F042K4T6" H 6450 1950 50  0001 C CNN "MPN"
+F 5 "ST" H 6450 1950 50  0001 C CNN "Manufacturer"
 	1    6450 1950
 	1    0    0    -1  
 $EndComp
@@ -615,7 +621,7 @@ U 1 1 5F6E35A3
 P 1350 6300
 F 0 "J4" H 1020 6304 50  0000 R CNN
 F 1 "RJ45" H 1020 6395 50  0000 R CNN
-F 2 "" V 1350 6325 50  0001 C CNN
+F 2 "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal" V 1350 6325 50  0001 C CNN
 F 3 "~" V 1350 6325 50  0001 C CNN
 	1    1350 6300
 	1    0    0    1   
@@ -656,6 +662,8 @@ F 0 "U5" H 6550 3650 50  0000 C CNN
 F 1 "TSC2046" H 6650 3750 50  0000 C CNN
 F 2 "Package_SO:SSOP-16_3.9x4.9mm_P0.635mm" H 6400 3600 50  0001 C CIN
 F 3 "https://www.ti.com/lit/ds/symlink/tsc2046.pdf" H 6600 3650 50  0001 C CNN
+F 4 "TSC2046IPW" H 6400 4200 50  0001 C CNN "MPN"
+F 5 "TI" H 6400 4200 50  0001 C CNN "Manufacturer"
 	1    6400 4200
 	1    0    0    -1  
 $EndComp
@@ -773,13 +781,15 @@ X-
 Text Label 9300 1200 0    50   ~ 0
 Y-
 $Comp
-L Interface_CAN_LIN:MCP2551-I-SN U6
+L bec-interface:MCP2551-I-SN U6
 U 1 1 5F763739
 P 3450 6400
 F 0 "U6" H 3800 6050 50  0000 C CNN
 F 1 "MCP2551-I-SN" H 3100 6750 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3450 5900 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 3450 6400 50  0001 C CNN
+F 4 "MCP2551-I/SN" H 3450 6400 50  0001 C CNN "MPN"
+F 5 "Microchip" H 3450 6400 50  0001 C CNN "Manufacturer"
 	1    3450 6400
 	-1   0    0    -1  
 $EndComp
@@ -1062,6 +1072,8 @@ F 0 "U7" H 3875 8625 50  0000 C CNN
 F 1 "MAX13487E" H 3875 8534 50  0000 C CNN
 F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 3650 7900 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX13487E-MAX13488E.pdf" H 3650 7900 50  0001 C CNN
+F 4 "Maxim" H 3650 7900 50  0001 C CNN "Manufacturer"
+F 5 "MAX13487EESA+" H 3650 7900 50  0001 C CNN "MPN"
 	1    3650 7900
 	-1   0    0    -1  
 $EndComp
@@ -1137,7 +1149,7 @@ U 1 1 5F9B49B8
 P 1350 7400
 F 0 "J5" H 1020 7404 50  0000 R CNN
 F 1 "RJ45" H 1020 7495 50  0000 R CNN
-F 2 "" V 1350 7425 50  0001 C CNN
+F 2 "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal" V 1350 7425 50  0001 C CNN
 F 3 "~" V 1350 7425 50  0001 C CNN
 	1    1350 7400
 	1    0    0    1   

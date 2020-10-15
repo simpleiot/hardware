@@ -11,6 +11,8 @@ and ODROID-C4 SBCs.
 - LCD/Touchscreen
 - pass through rPI expansion connector to provide use of unused pins.
 - XBee socket (Digi, Nimbelink, etc radios)
+  - reference design: https://nimbelink.com/products/raspberry-pi-skywire-adapter/
+  - supports both standard 40-pin expansion and compute module
 - LoraWan radio
 
 ## MPU Interface
